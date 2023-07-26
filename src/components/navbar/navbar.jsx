@@ -1,17 +1,21 @@
 import React from "react";
-import { StyledButton, StyledLi, StyledNav, StyledUl } from "./styled";
+import { StyledNav } from "./styled";
+import MenuToggler from "../menuToggler/menuToggler";
+import { motion, useCycle } from "framer-motion";
+import NavigationUl from "../navigationUl/navigationUl";
+
+
 
 function Navbar () {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
   return (
-    <StyledNav>
-      <StyledUl>
-        <StyledLi>Обо мне</StyledLi>
-        <StyledLi>Моё образование</StyledLi>
-        <StyledLi>Мои проекты</StyledLi>
-        <StyledLi>Контакты</StyledLi>
-      </StyledUl>
-      <StyledButton> asd  </StyledButton>
-    </StyledNav>
+    <motion.nav initial={false} animate={isOpen ? "open" : "closed"}>
+      <StyledNav>
+        <NavigationUl toggle={() => toggleOpen()}/>
+        <MenuToggler toggle={() => toggleOpen()}/>
+      </StyledNav>
+    </motion.nav>
   )
 }
 
