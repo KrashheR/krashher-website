@@ -3,7 +3,7 @@ import { StyledUl, StyledLi } from "./styled";
 
 function NavigationUl ({ toggle }) {
   return (
-    <StyledUl >
+    <StyledUl $toggle={toggle}>
       <StyledLi>Обо мне</StyledLi>
       <StyledLi>Проекты</StyledLi>
       <StyledLi>Навыки</StyledLi>

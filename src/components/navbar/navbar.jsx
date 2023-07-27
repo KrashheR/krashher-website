@@ -1,21 +1,22 @@
-import React from "react";
-import { StyledNav } from "./styled";
+import React, { useState } from "react";
+import { StyledHamburger, StyledNav } from "./styled";
 import MenuToggler from "../menuToggler/menuToggler";
-import { motion, useCycle } from "framer-motion";
 import NavigationUl from "../navigationUl/navigationUl";
+import {StyledMenuToggler} from "../menuToggler/styled";
 
 
 
 function Navbar () {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <motion.nav initial={false} animate={isOpen ? "open" : "closed"}>
-      <StyledNav>
-        <NavigationUl toggle={() => toggleOpen()}/>
-        <MenuToggler toggle={() => toggleOpen()}/>
-      </StyledNav>
-    </motion.nav>
+    <StyledNav>
+    <NavigationUl toggle={isOpen}/>
+    <StyledHamburger onClick={() => setOpen(!isOpen)}>
+      <MenuToggler toggle={isOpen}/>
+    </StyledHamburger>
+
+  </StyledNav>
   )
 }
 
