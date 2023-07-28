@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { StyledHamburger, StyledNav } from "./styled";
-import MenuToggler from "../menuToggler/menuToggler";
+import { StyledNavToggler, StyledNav } from "./styled";
+import Hamburger from "../hamburger/hamburger";
 import NavigationUl from "../navigationUl/navigationUl";
-import {StyledMenuToggler} from "../menuToggler/styled";
-
 
 
 function Navbar () {
@@ -12,10 +10,9 @@ function Navbar () {
   return (
     <StyledNav>
     <NavigationUl toggle={isOpen}/>
-    <StyledHamburger onClick={() => setOpen(!isOpen)}>
-      <MenuToggler toggle={isOpen}/>
-    </StyledHamburger>
-
+    <StyledNavToggler onClick={() => setOpen(!isOpen)}>
+      <Hamburger toggle={isOpen} />
+    </StyledNavToggler>
   </StyledNav>
   )
 }
