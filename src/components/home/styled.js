@@ -2,9 +2,10 @@ import styled from "styled-components"
 
 export const StyledHome = styled.section`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: calc(100vh - 108px);
-  padding-top: 4em;
+  padding-bottom: 5em;
 `;
 
 export const StyledImage = styled.img`
