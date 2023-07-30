@@ -6,7 +6,7 @@ import { StyledHeader } from "./styled";
 function Header () {
   return(
     <StyledHeader>
-      <Title level={TitleLevel.H1} color={TitleColor.PRIMARY}>KrashheR</Title>
+      <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>NIKITA KUCHERENKO</Title>
       <Navbar />
     </StyledHeader>
   )

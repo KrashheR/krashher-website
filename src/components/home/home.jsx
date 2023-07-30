@@ -1,5 +1,5 @@
 import React from "react";
-import {StyledHome, StyledImage } from "./styled";
+import { StyledHome } from "./styled";
 import MyPhoto from "../../images/my_photo.jpg";
 import Greetings from "../greetings/greetings";
 import GreetingsImage from "../greetingsImage/greetingsImage";

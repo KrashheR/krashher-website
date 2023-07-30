@@ -12,20 +12,18 @@ function GreetingsImage ({ imageSrc }) {
     }
   };
 
+
   const child = {
     visible: {
       opacity: 1,
-      border:"4px solid  #EDF738",
-      borderRadius: "50%",
       y: 0,
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+      transition: { ease: [0.01, 0.2, 0.515, 1], duration: 0.85 },
     },
     hidden: {
       opacity: 0,
-      border: "none",
+      border: "4px solid  #EDF738",
       borderRadius: "50%",
-      y: "50%",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+      y: "50%"
     },
   };
 
@@ -35,11 +33,9 @@ function GreetingsImage ({ imageSrc }) {
     initial="hidden"
     animate="visible"
   >
-
-    <motion.div variants={child}>
+    <motion.div variants={child} >
       <StyledGreetingsImage src={imageSrc} />
     </motion.div>
-
   </motion.div>
 
 

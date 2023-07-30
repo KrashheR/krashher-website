@@ -4,16 +4,7 @@ export const StyledHome = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: calc(100vh - 108px);
+  height: 100vh;
   padding-bottom: 5em;
-`;
-
-export const StyledImage = styled.img`
-  max-width: 350px;
-  max-height: 350px;
-  border-radius: 50%;
-  padding: 10px;
-  border: 4px solid  ${(props) => props.theme.colors.primary};
-  aspect-ratio: auto 512 / 512;
 `;
 
