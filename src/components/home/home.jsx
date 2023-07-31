@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledHome } from "./styled";
-import MyPhoto from "../../images/my_photo.jpg";
+import MyPhoto from "../../assets/images/my_photo.jpg";
 import Greetings from "../greetings/greetings";
 import GreetingsImage from "../greetingsImage/greetingsImage";
 

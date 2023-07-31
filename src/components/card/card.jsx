@@ -6,6 +6,7 @@ function Card () {
     <StyledCard>
       <StyledImage />
 
+
     </StyledCard>
   );
 }

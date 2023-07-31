@@ -5,6 +5,6 @@ export const StyledProjects = styled.section`
 
 `;
 
-export const StyledProjectsGrid = styled.grid`
+export const StyledProjectsGrid = styled.div`
   display: grid;
 `;

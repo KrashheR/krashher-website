@@ -1,0 +1,10 @@
+[
+  {
+    "id":0,
+    "image": "../../assets/images/oculus.jpg",
+    "description": "Данный сайт разработан в соответствии с методологией БЭМ. В его основе HTML, SCSS(SASS), JavaScript. Сборка проекта производилась с помощью GULP 4. Была произведена оптимизация работы сайта путём минимизации css и js файлов, преобразования изображений в webp формат и небольшого сжатия качества.",
+    "stack": ["HTML", "SASS", "JavaScript", "GULP", "БЭМ"],
+    "github": "https://github.com/KrashheR/oculus-site",
+    "demo": "https://krashher.github.io/oculus-site/"
+  }
+]
