@@ -8,5 +8,10 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledImage = styled.img`
+  max-width: 200px;
+  max-height: 200px
+`;
+
+export const StyledDescription = styled.p`
 
 `;

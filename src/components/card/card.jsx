@@ -1,11 +1,15 @@
 import React from "react";
-import { StyledCard, StyledImage } from "./styled";
+import { StyledCard, StyledDescription, StyledImage } from "./styled";
 
-function Card () {
+
+function Card ( {data} ) {
+
   return (
     <StyledCard>
-      <StyledImage />
-
+      <StyledImage src={require("../../assets/images/oculus.png")}/>
+      <StyledDescription>
+        {data.description}
+      </StyledDescription>
 
     </StyledCard>
   );
