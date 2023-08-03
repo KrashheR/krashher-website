@@ -15,7 +15,7 @@ export const TitleColor = {
   GRAY: "gray"
 }
 
-function Title ({level, color, children}) {
+function Title ({ level, color, children }) {
 
   return(
     <StyledTitle as={`h${level}`} $color = {color}> {children} </StyledTitle>

@@ -4,7 +4,7 @@ import Button, { ButtonType } from "../button/button";
 import { ButtonContainer } from "../button/styled";
 
 
-function Card ( {data} ) {
+function Card ({ data }) {
 
   return (
     <StyledCard>
@@ -12,9 +12,10 @@ function Card ( {data} ) {
       <StyledDescription>
         {data.description}
       </StyledDescription>
+
       <StyledLinksContainer>
-        <StyledGithubLink href={data.github} target="_blank">Перейти на GitHub</StyledGithubLink>
         <StyledDemoLink href={data.demo} target="_blank">Посмотреть Demo</StyledDemoLink>
+        <StyledGithubLink href={data.github} target="_blank">Перейти на GitHub</StyledGithubLink>
       </StyledLinksContainer>
     </StyledCard>
   );

@@ -6,6 +6,8 @@ export const StyledProjects = styled.section`
 `;
 
 export const StyledProjectsGrid = styled.div`
-  margin-top: 40px;
   display: grid;
+  margin-top: 40px;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 `;

@@ -10,6 +10,10 @@ function Projects () {
       <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>МОИ ПРОЕКТЫ</Title>
       <StyledProjectsGrid>
         <Card data={Data[0]}/>
+        <Card data={Data[0]}/>
+        <Card data={Data[0]}/>
+        <Card data={Data[0]}/>
+        <Card data={Data[0]}/>
       </StyledProjectsGrid>
     </StyledProjects>
   );
