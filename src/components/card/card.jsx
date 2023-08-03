@@ -1,5 +1,7 @@
 import React from "react";
-import { StyledCard, StyledDescription, StyledImage } from "./styled";
+import { StyledCard, StyledDemoLink, StyledDescription, StyledGithubLink, StyledImage, StyledLinksContainer } from "./styled";
+import Button, { ButtonType } from "../button/button";
+import { ButtonContainer } from "../button/styled";
 
 
 function Card ( {data} ) {
@@ -10,7 +12,10 @@ function Card ( {data} ) {
       <StyledDescription>
         {data.description}
       </StyledDescription>
-
+      <StyledLinksContainer>
+        <StyledGithubLink href={data.github} target="_blank">Перейти на GitHub</StyledGithubLink>
+        <StyledDemoLink href={data.demo} target="_blank">Посмотреть Demo</StyledDemoLink>
+      </StyledLinksContainer>
     </StyledCard>
   );
 }

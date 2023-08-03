@@ -6,5 +6,6 @@ export const StyledProjects = styled.section`
 `;
 
 export const StyledProjectsGrid = styled.div`
+  margin-top: 40px;
   display: grid;
 `;
