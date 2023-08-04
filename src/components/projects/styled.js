@@ -17,7 +17,6 @@ export const StyledProjectsGrid = styled.div`
     align-items: center;
   }
 
-
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     align-items: normal;
   }

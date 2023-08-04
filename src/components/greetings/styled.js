@@ -10,7 +10,7 @@ export const StyledGreetings = styled.h1`
   font-size: 65px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    font-size: 55px;
+    font-size: max(6vw, 46px);
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {

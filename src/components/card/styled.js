@@ -35,6 +35,14 @@ export const StyledGithubLink = styled.a`
     background-color: ${(props) => props.theme.colors.textGray};
     color: ${(props) => props.theme.colors.bg};
   }
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    font-size: 14px;
+  }
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
+    font-size: 12px;
+  }
 `;
 
 export const StyledDemoLink = styled.a`
@@ -50,6 +58,14 @@ export const StyledDemoLink = styled.a`
   &:hover{
     background-color: ${(props) => props.theme.colors.textPrimary};
     color: ${(props) => props.theme.colors.bg};
+  }
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    font-size: 14px;
+  }
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
+    font-size: 12px;
   }
 `;
 
