@@ -7,7 +7,7 @@ export const StyledProjects = styled.section`
 
 export const StyledProjectsGrid = styled.div`
   display: grid;
-  margin-top: 40px;
+  margin-top: 80px;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 `;
