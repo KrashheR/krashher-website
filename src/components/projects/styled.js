@@ -11,8 +11,14 @@ export const StyledProjectsGrid = styled.div`
   margin-top: 80px;
   grid-gap: 40px;
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}){
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    align-items: normal;
   }
 `;

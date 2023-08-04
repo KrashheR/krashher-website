@@ -8,8 +8,9 @@ export const DefaultTheme = {
     demoButton: "#EDF738"
   },
   deviceSizes: {
-    mobile: "480px",
-    tablet: "780px",
+    mobileSmall: "376px",
+    mobile: "576px",
+    tablet: "824px",
     laptop: "1240px",
   }
 };

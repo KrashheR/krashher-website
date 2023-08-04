@@ -5,3 +5,14 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const StyledHeaderTitle = styled.span`
+
+  // @media(max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+  //   font-size: 1.5vh;
+  // }
+
+  // @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+  //   font-size: 1vh;
+  // }
+`;

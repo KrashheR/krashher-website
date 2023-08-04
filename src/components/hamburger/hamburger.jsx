@@ -5,7 +5,6 @@ function Hamburger ({ toggle }) {
   let midLine = toggle ? 0 : 1;
   let bottomLine = toggle ? "M 12 13 L 28 27" : "M 12 27 L 28 27";
 
-
   return(
     <svg width="40" height="40" viewBox="0 0 40 40" strokeWidth="3" stroke="#EDF738" strokeLinecap="round" >
       <path d = {topLine} />

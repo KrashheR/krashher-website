@@ -22,8 +22,7 @@ const Greetings = ({ text }) => {
     },
     hidden: {
       opacity: 0,
-      y: "50%",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+      y: "50%"
     },
   };
 
