@@ -21,3 +21,12 @@ export const StyledProjectsGrid = styled.div`
     align-items: normal;
   }
 `;
+
+export const StyledProjectsTitle = styled.span`
+  font-size: 30px;
+  font-weight: 900;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    font-size: 20px;
+  }
+`;

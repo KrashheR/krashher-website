@@ -1,13 +1,16 @@
 import React from "react";
-import { StyledProjects, StyledProjectsGrid } from "./styled";
+import { StyledProjects, StyledProjectsGrid, StyledProjectsTitle } from "./styled";
 import Title, { TitleColor, TitleLevel } from "../title/title";
 import Card from "../card/card";
 import Data from "../../data/projectsData.json";
 
 function Projects () {
   return (
-    <StyledProjects>
-      <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>МОИ ПРОЕКТЫ</Title>
+    <StyledProjects id="projects">
+      <StyledProjectsTitle>
+        <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>МОИ ПРОЕКТЫ</Title>
+      </StyledProjectsTitle>
+
       <StyledProjectsGrid>
         <Card data={Data[0]}/>
         <Card data={Data[0]}/>
