@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledProjects, StyledProjectsGrid, StyledProjectsTitle } from "./styled";
+import { StyledProjects, StyledProjectsGrid } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Card from "../card/card";
 import Data from "../../data/projectsData.json";
