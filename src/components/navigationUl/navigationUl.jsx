@@ -1,14 +1,14 @@
 import React from "react";
-import { StyledUl, StyledLi } from "./styled";
+import { StyledUl, StyledLi, StyledLink } from "./styled";
 
 function NavigationUl ({ toggle }) {
   return (
     <StyledUl $toggle={toggle}>
-      <StyledLi>Обо мне</StyledLi>
-      <StyledLi>Проекты</StyledLi>
-      <StyledLi>Навыки</StyledLi>
-      <StyledLi>Образование</StyledLi>
-      <StyledLi>Контакты</StyledLi>
+      <StyledLi><StyledLink href="#projects">Обо мне</StyledLink></StyledLi>
+      <StyledLi><StyledLink href="#projects">Проекты</StyledLink></StyledLi>
+      <StyledLi><StyledLink href="#projects">Навыки</StyledLink></StyledLi>
+      <StyledLi><StyledLink href="#projects">Образование</StyledLink></StyledLi>
+      <StyledLi><StyledLink href="#projects">Контакты</StyledLink></StyledLi>
     </StyledUl>
   );
 }
