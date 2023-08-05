@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.section`
-  height: 100vh;
-
+  height: auto;
 `;
 
 export const StyledProjectsGrid = styled.div`
@@ -19,14 +18,5 @@ export const StyledProjectsGrid = styled.div`
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     align-items: normal;
-  }
-`;
-
-export const StyledProjectsTitle = styled.span`
-  font-size: 30px;
-  font-weight: 900;
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 20px;
   }
 `;

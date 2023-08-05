@@ -15,10 +15,15 @@ export const TitleColor = {
   GRAY: "gray"
 }
 
-function Title ({ level, color, children }) {
+export const TitleType = {
+  SECTION: "section",
+  CARD: "card"
+}
+
+function Title ({ level, color, type, children }) {
 
   return(
-    <StyledTitle as={`h${level}`} $color = {color}> {children} </StyledTitle>
+    <StyledTitle as={`h${level}`} $color = { color } type={ type }> { children } </StyledTitle>
   )
 }
 

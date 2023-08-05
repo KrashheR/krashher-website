@@ -78,13 +78,3 @@ export const StyledLinksContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const StyledCardTitle = styled.span`
-  padding: 14px 0;
-  text-align: center;
-  font-size: 24px;
-  text-transform: uppercase;
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 20px;
-  }
-`;
