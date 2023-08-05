@@ -13,7 +13,7 @@ export const StyledUl = styled.ul`
     }
     return opacity;
   }};
-  transition: 0.3s ease;
+  transition: 0.7s ease;
   transform: ${(props) => {
     let transform = "translate3d(48px, 0px, 0px)";
       if(props.$toggle === true) {
@@ -29,16 +29,18 @@ export const StyledUl = styled.ul`
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     position: absolute;
     flex-direction: column;
-    height: auto;
+    justify-content: center;
+    height: -webkit-fill-available;
     width: 100%;
     top: 0;
     right: 0;
     z-index: 1;
+    opacity: 1;
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
-      let transform = "translate3d(0px, -80px, 0px)";
+      let transform = "translate3d(510px, 0px, 0px)";
         if(props.$toggle === true) {
-          transform = "translate3d(0px, 00px, 0px)";
+          transform = "translate3d(0px, 0px, 0px)";
         }
       return transform;
     }};
@@ -52,13 +54,15 @@ export const StyledLi = styled.li`
   color: ${(props) => props.theme.colors.textPrimary};
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    border-top: 2px solid #EDF738;
+    border-bottom: 2px solid ${(props) => props.theme.colors.textPrimary};
     text-align: center;
     margin-right: 0px;
     padding: 20px 0;
-
-    &:nth-child(1){
-      margin-top: 30px;
-    }
+    font-size: 1.5rem;
   }
+`;
+
+export const StyledLink = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.textPrimary};
 `;

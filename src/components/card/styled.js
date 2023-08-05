@@ -19,6 +19,10 @@ export const StyledDescription = styled.p`
   font-size: 18px;
   padding: 0 20px;
   font-weight: 500;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    font-size: 16px;
+  }
 `;
 
 export const StyledGithubLink = styled.a`
@@ -79,4 +83,8 @@ export const StyledCardTitle = styled.span`
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
+    font-size: 20px;
+  }
 `;
