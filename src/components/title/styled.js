@@ -30,7 +30,14 @@ export const StyledTitle = styled.h1`
     }
     return fontWeight;
   }};
-  text-align: center;
+  text-align: ${(props) => {
+    let textAlign = "center";
+    if(props.type === TitleType.SECTION) {
+      textAlign = "left";
+    }
+    return textAlign;
+  }};
+
   text-transform: uppercase;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){

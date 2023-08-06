@@ -8,8 +8,9 @@ function Main () {
   return(
     <>
       <Home />
-      <Projects />
       <Skills />
+      <Projects />
+
     </>
   );
 }
