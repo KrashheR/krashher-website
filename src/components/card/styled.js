@@ -78,3 +78,8 @@ export const StyledLinksContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const StyledStack = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+`;
