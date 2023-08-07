@@ -6,6 +6,8 @@ export const StyledLink = styled.a`
     let color = props.theme.colors.textPrimary;
     if(props.$linkType === LinkType.GITHUB){
       color = props.theme.colors.textGray;
+    } else if (props.$linkType === LinkType.TELEGRAM){
+      color = props.theme.colors.telegram;
     }
     return color;
   }};
@@ -14,6 +16,8 @@ export const StyledLink = styled.a`
     let color = props.theme.colors.textPrimary;
     if(props.$linkType === LinkType.GITHUB){
       color = props.theme.colors.textGray;
+    } else if (props.$linkType === LinkType.TELEGRAM){
+      color = props.theme.colors.telegram;
     }
     return color;
   }};
@@ -28,17 +32,12 @@ export const StyledLink = styled.a`
       let color = props.theme.colors.textPrimary;
       if(props.$linkType === LinkType.GITHUB){
         color = props.theme.colors.textGray;
+      } else if (props.$linkType === LinkType.TELEGRAM){
+        color = props.theme.colors.telegram;
       }
       return color;
     }};
-    color: ${(props) => {
-      let color = props.theme.colors.textPrimary;
-      if(props.$linkType === LinkType.GITHUB){
-        color = props.theme.colors.textGray;
-      }
-      return color;
-    }};
-  }
+    color: ${(props) => props.theme.colors.bg};
 
   @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: 14px;

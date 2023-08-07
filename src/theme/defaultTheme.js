@@ -5,7 +5,8 @@ export const DefaultTheme = {
     textPrimary: "#EDF738",
     textGray: "#E8E8E8",
     githubButton: "#FFFFFF",
-    demoButton: "#EDF738"
+    demoButton: "#EDF738",
+    telegram: "#29a0dc"
   },
   deviceSizes: {
     mobileSmall: "376px",

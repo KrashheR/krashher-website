@@ -4,6 +4,7 @@ import { StyledLink } from "./styled";
 export const LinkType = {
   GITHUB: "github",
   DEMO: "demo",
+  TELEGRAM: "telegram"
 }
 
 function Link({ children, linkType, href, target }) {

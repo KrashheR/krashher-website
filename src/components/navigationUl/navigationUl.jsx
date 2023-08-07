@@ -8,7 +8,7 @@ function NavigationUl ({ toggle }) {
       <StyledLi><StyledLink href="#skills">Навыки</StyledLink></StyledLi>
       <StyledLi><StyledLink href="#education">Образование</StyledLink></StyledLi>
       <StyledLi><StyledLink href="#projects">Проекты</StyledLink></StyledLi>
-      <StyledLi><StyledLink href="#projects">Контакты</StyledLink></StyledLi>
+      <StyledLi><StyledLink href="#contacts">Контакты</StyledLink></StyledLi>
     </StyledUl>
   );
 }

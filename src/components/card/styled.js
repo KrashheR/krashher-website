@@ -14,7 +14,7 @@ export const StyledImage = styled.img`
   border-radius: 20px 20px 0 0;
 `;
 
-export const StyledLinksContainer = styled.div`
+export const StyledCardLinksContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
