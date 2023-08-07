@@ -14,54 +14,6 @@ export const StyledImage = styled.img`
   border-radius: 20px 20px 0 0;
 `;
 
-export const StyledGithubLink = styled.a`
-  color: ${(props) => props.theme.colors.textGray};
-  padding: 10px;
-  border: 2px solid ${(props) => props.theme.colors.textGray};
-  border-radius: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s ease;
-
-  &:hover{
-    background-color: ${(props) => props.theme.colors.textGray};
-    color: ${(props) => props.theme.colors.bg};
-  }
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 14px;
-  }
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
-    font-size: 12px;
-  }
-`;
-
-export const StyledDemoLink = styled.a`
-  color: ${(props) => props.theme.colors.textPrimary};
-  padding: 10px;
-  border: 2px solid ${(props) => props.theme.colors.primary};
-  border-radius: 20px;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s ease;
-
-  &:hover{
-    background-color: ${(props) => props.theme.colors.textPrimary};
-    color: ${(props) => props.theme.colors.bg};
-  }
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 14px;
-  }
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
-    font-size: 12px;
-  }
-`;
-
 export const StyledLinksContainer = styled.div`
   display: flex;
   justify-content: space-between;

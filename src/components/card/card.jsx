@@ -1,8 +1,9 @@
 import React from "react";
-import { StyledCard, StyledDemoLink, StyledGithubLink, StyledImage, StyledLinksContainer, StyledStack } from "./styled";
+import { StyledCard, StyledImage, StyledLinksContainer, StyledStack } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
 import Description from "../description/description";
+import Link, { LinkType } from "../link/link";
 
 
 function Card ({ data }) {
@@ -18,8 +19,8 @@ function Card ({ data }) {
         <Stack stackList={data.stack}/>
       </StyledStack>
       <StyledLinksContainer>
-        <StyledDemoLink href={data.demo} target="_blank">Посмотреть Demo</StyledDemoLink>
-        <StyledGithubLink href={data.github} target="_blank">Перейти на GitHub</StyledGithubLink>
+        <Link linkType={LinkType.GITHUB} href={data.github} target="_blank">Перейти на GitHub</Link>
+        <Link linkType={LinkType.DEMO} href={data.demo} target="_blank">Посмотреть Demo</Link>
       </StyledLinksContainer>
     </StyledCard>
   );

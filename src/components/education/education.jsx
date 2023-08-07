@@ -5,7 +5,7 @@ import EducationPlace from "../educationPlace/educationPlace";
 
 function Education() {
   return(
-    <StyledEducation>
+    <StyledEducation id="education">
       <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>Образование</Title>
       <StyledEducationGrid>
         <EducationPlace position={"universityBac"} title={"Бакалавриат"} description={"Волгоградский государственный технический университет. Прикладная информатика. 2017-2021"}/>
