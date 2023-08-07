@@ -1,9 +1,12 @@
 import React from "react";
 import Contacts from "../contacts/contacts";
+import Container from "../container/container";
 
 function Footer() {
   return(
-    <Contacts />
+    <Container>
+      <Contacts />
+    </Container>
   );
 }
 

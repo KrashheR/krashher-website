@@ -14,5 +14,10 @@ export const StyledEducationGrid = styled.div`
                        "universityMag . react";
   grid-gap: 40px;
   margin-top: 80px;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
