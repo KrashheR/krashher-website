@@ -16,19 +16,3 @@ export const StyledSoftSkill = styled.span`
   }
 
 `;
-
-export const StyledSoftSkillTitle = styled.h4`
-  font-size: 20px;
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    font-size: 18px;
-  }
-`;
-
-export const StyledSoftSkillDescription = styled.p`
-  color: ${(props) => props.theme.colors.textGray};
-  font-size: 18px;
-  text-align: center;
-  font-weight: 600;
-
-`;

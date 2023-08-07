@@ -1,7 +1,8 @@
 import React from "react";
-import { StyledCard, StyledDemoLink, StyledDescription, StyledGithubLink, StyledImage, StyledLinksContainer, StyledStack } from "./styled";
+import { StyledCard, StyledDemoLink, StyledGithubLink, StyledImage, StyledLinksContainer, StyledStack } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
+import Description from "../description/description";
 
 
 function Card ({ data }) {
@@ -10,9 +11,9 @@ function Card ({ data }) {
     <StyledCard>
       <StyledImage src={require("../../assets/images/oculus.png")}/>
       <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ data.title }</Title>
-      <StyledDescription>
+      <Description>
         {data.description}
-      </StyledDescription>
+      </Description>
       <StyledStack>
         <Stack stackList={data.stack}/>
       </StyledStack>

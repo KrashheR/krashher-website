@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledSkills, StyledSkillsSoft, StyledSkillsSoftContainer, StyledSkillsStack, StyledSkillsSubtitle } from "./styled";
+import { StyledSkills, StyledSkillsSoftContainer, StyledSkillsStack, StyledSkillsSubtitle } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
 import SoftSkill from "../softSkill/softSkill";

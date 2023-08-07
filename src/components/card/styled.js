@@ -14,17 +14,6 @@ export const StyledImage = styled.img`
   border-radius: 20px 20px 0 0;
 `;
 
-export const StyledDescription = styled.p`
-  color: ${(props) => props.theme.colors.textGray};
-  font-size: 18px;
-  padding: 0 20px;
-  font-weight: 500;
-
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 16px;
-  }
-`;
-
 export const StyledGithubLink = styled.a`
   color: ${(props) => props.theme.colors.textGray};
   padding: 10px;
