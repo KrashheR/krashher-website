@@ -23,7 +23,7 @@ export const TitleType = {
 function Title ({ level, color, type, children }) {
 
   return(
-    <StyledTitle as={`h${level}`} $color = { color } type={ type }> { children } </StyledTitle>
+    <StyledTitle as={`h${level}`} $color = { color } $titleType={ type }> { children } </StyledTitle>
   )
 }
 

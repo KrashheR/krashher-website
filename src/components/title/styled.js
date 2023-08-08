@@ -4,7 +4,7 @@ import { TitleColor, TitleType } from "./title";
 export const StyledTitle = styled.h1`
   padding: ${(props) => {
     let padding = "0";
-    if(props.type === TitleType.CARD) {
+    if(props.$titleType === TitleType.CARD) {
       padding = "14px 0";
     }
     return padding;
@@ -18,21 +18,21 @@ export const StyledTitle = styled.h1`
   }};
   font-size: ${(props) => {
     let fontSize = props.theme.fontSizes.cardTitle;
-    if(props.type === TitleType.SECTION) {
+    if(props.$titleType === TitleType.SECTION) {
       fontSize = props.theme.fontSizes.sectionTitle;
     }
     return fontSize;
   }};
   font-weight: ${(props) => {
     let fontWeight = 700;
-    if(props.type === TitleType.SECTION) {
+    if(props.$titleType === TitleType.SECTION) {
       fontWeight = 900;
     }
     return fontWeight;
   }};
   text-align: ${(props) => {
     let textAlign = "center";
-    if(props.type === TitleType.SECTION) {
+    if(props.$titleType === TitleType.SECTION) {
       textAlign = "left";
     }
     return textAlign;
@@ -43,7 +43,7 @@ export const StyledTitle = styled.h1`
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: ${(props) => {
       let fontSize = props.theme.fontSizes.cardTitleMobile;
-      if(props.type === TitleType.SECTION) {
+      if(props.$titleType === TitleType.SECTION) {
         fontSize = props.theme.fontSizes.sectionTitleMobile;
       }
       return fontSize;
