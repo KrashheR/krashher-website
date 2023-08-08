@@ -26,7 +26,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   font-size: 16px;
   transition: 0.3s ease;
-
+  text-align: center;
   &:hover{
     background-color: ${(props) => {
       let color = props.theme.colors.textPrimary;
@@ -38,6 +38,7 @@ export const StyledLink = styled.a`
       return color;
     }};
     color: ${(props) => props.theme.colors.bg};
+  }
 
   @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: 14px;
