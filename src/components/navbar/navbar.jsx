@@ -22,9 +22,9 @@ function Navbar () {
 
   return (
     <StyledNav>
-    <NavigationUl toggle={openHamburger}/>
+    <NavigationUl toggle={openHamburger} />
     <StyledNavToggler ref={hamburgerRef} onClick={() => setHamburger(!openHamburger)}>
-      <Hamburger  toggle={openHamburger} />
+      <Hamburger toggle={openHamburger} />
     </StyledNavToggler>
   </StyledNav>
   )
