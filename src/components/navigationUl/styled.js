@@ -7,15 +7,11 @@ export const StyledUl = styled.ul`
   list-style-type: none;
   transform-style: preserve-3d;
   opacity: ${(props) => {
-    let opacity = 0;
-    if (props.$toggle === true) {
-      opacity = 1;
-    }
-    return opacity;
+    return props.$toggle === true ? 1 : 0;
   }};
   transition: 0.7s ease;
   transform: ${(props) => {
-    let transform = "translate3d(48px, 0px, 0px)";
+    let transform = "translate3d(80px, 0px, 0px)";
       if(props.$toggle === true) {
         transform = "translate3d(0px, 0px, 0px)";
       }
@@ -38,7 +34,7 @@ export const StyledUl = styled.ul`
     opacity: 1;
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
-      let transform = "translate3d(510px, 0px, 0px)";
+      let transform = "translate3d(0px, -100%, 0px)";
         if(props.$toggle === true) {
           transform = "translate3d(0px, 0px, 0px)";
         }

@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { StyledNavToggler, StyledNav } from "./styled";
 import Hamburger from "../hamburger/hamburger";
 import NavigationUl from "../navigationUl/navigationUl";
 
 
 function Navbar () {
-  const [isOpen, setOpen] = useState(false);
+  const [openHamburger, setHamburger] = useState(false);
+
+  useEffect(() => {
+    const closeHamburger = ()=> {
+      setHamburger(false);
+    }
+
+    document.addEventListener("mousedown", closeHamburger);
+    return () => document.removeEventListener("mousdown", closeHamburger);
+  }, []);
 
   return (
     <StyledNav>
-    <NavigationUl toggle={isOpen}/>
-    <StyledNavToggler onClick={() => setOpen(!isOpen)}>
-      <Hamburger toggle={isOpen} />
+    <NavigationUl toggle={openHamburger}/>
+    <StyledNavToggler onClick={() => setHamburger(!openHamburger)}>
+      <Hamburger toggle={openHamburger} />
     </StyledNavToggler>
   </StyledNav>
   )
