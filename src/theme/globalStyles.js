@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: 'Inter', Arial, sans-serif;
     background-color: ${props => props.theme.colors.bg};
