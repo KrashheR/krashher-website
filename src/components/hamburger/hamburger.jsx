@@ -20,6 +20,7 @@ function Hamburger ({ toggle }) {
             repeatCount="0"
         />
     </svg>
+
   );
 }
 

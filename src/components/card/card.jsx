@@ -4,6 +4,7 @@ import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
 import Description from "../description/description";
 import Link, { LinkType } from "../link/link";
+import { motion } from "framer-motion";
 
 
 function Card ({ data }) {
@@ -15,7 +16,7 @@ function Card ({ data }) {
       <Description>
         {data.description}
       </Description>
-      <StyledStack>
+      <StyledStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <Stack stackList={data.stack}/>
       </StyledStack>
       <StyledCardLinksContainer>

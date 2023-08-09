@@ -1,16 +1,14 @@
 import React from "react";
 import Title, { TitleColor, TitleLevel } from "../title/title";
 import Navbar from "../navbar/navbar";
-import { StyledHeader, StyledHeaderTitle } from "./styled";
+import { StyledHeader } from "./styled";
 import Container from "../container/container";
 
 function Header () {
   return(
     <Container>
       <StyledHeader>
-        <StyledHeaderTitle>
-          <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>NIKITA KUCHERENKO</Title>
-        </StyledHeaderTitle>
+        <Title level={TitleLevel.H2} color={TitleColor.PRIMARY}>NIKITA KUCHERENKO</Title>
         <Navbar />
       </StyledHeader>
     </Container>

@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledStackImg } from "./styled";
+import { motion } from "framer-motion";
 import jsIcon from "../../assets/images/js.png";
 import htmlIcon from "../../assets/images/html.png";
 import scssIcon from "../../assets/images/scss.svg";
@@ -17,7 +18,7 @@ import figmaIcon from "../../assets/images/figma.png";
 import wordpressIcon from "../../assets/images/wordpress.png";
 import styledComponentsIcon from "../../assets/images/styled-components.png";
 
-function Stack({ stackList, isTextEnabled }) {
+function Stack({ stackList }) {
   const iconList = {"html":htmlIcon,
                     "css": cssIcon,
                     "sass": sassIcon,
@@ -36,10 +37,22 @@ function Stack({ stackList, isTextEnabled }) {
                     "wordpress": wordpressIcon,
                     };
 
+  const stackAnimation = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    visible: custom => ({
+      y: 0,
+      opacity: 1,
+      transition: {delay: custom * 0.15},
+  })
+  }
+
   return(
     <>
       {stackList.map((item, index) =>(
-        <StyledStackImg src = {iconList[item]} alt={item} key={index} />
+        <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src = {iconList[item]} alt={item} key={index} />
       ))}
     </>
   );

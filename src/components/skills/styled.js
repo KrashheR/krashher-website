@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.article`
-  margin: 80px 0;
+
 `;
 
 export const StyledSkillsStack = styled.div`
@@ -20,6 +20,8 @@ export const StyledSkillsSubtitle = styled.h3`
   font-size: 26px;
   margin: 100px 0 50px 0;
   text-align: left;
+  border-bottom: 2px solid ${(props) => props.theme.colors.textGray};
+
 `;
 
 export const StyledSkillsSoftContainer = styled.div`

@@ -8,6 +8,7 @@ export const StyledGreetings = styled.h1`
   text-align: left;
   color: ${(props) => props.theme.colors.textPrimary};
   font-size: 65px;
+  font-weight: 900;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     font-size: max(6vw, 46px);

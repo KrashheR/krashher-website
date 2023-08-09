@@ -5,7 +5,7 @@ export const StyledHome = styled.section`
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  padding-bottom: 5em;
+  padding-bottom: 15em;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     flex-direction: column;
@@ -14,7 +14,7 @@ export const StyledHome = styled.section`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    gap: 1px;
+    gap: 0;
   }
 `;
 
