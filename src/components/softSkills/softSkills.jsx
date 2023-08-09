@@ -4,7 +4,7 @@ import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Description from "../description/description";
 import { motion } from "framer-motion";
 
-function SoftSkill({ softSkillsList }) {
+function SoftSkills({ softSkillsList }) {
   const stackAnimation = {
     hidden: {
       y: 100,
@@ -32,4 +32,4 @@ function SoftSkill({ softSkillsList }) {
   );
 }
 
-export default SoftSkill;
+export default SoftSkills;

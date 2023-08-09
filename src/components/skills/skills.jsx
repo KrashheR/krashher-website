@@ -2,7 +2,7 @@ import React from "react";
 import { StyledSkills, StyledSkillsSoftContainer, StyledSkillsStack, StyledSkillsSubtitle } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
-import SoftSkill from "../softSkill/softSkill";
+import SoftSkills from "../softSkills/softSkills";
 import Container from "../container/container";
 import { motion } from "framer-motion";
 
@@ -19,7 +19,7 @@ function Skills () {
     ["Коммуникабельность6", "6Нахожу общий язык с любоым человекомум"]
 ];
 
-  const sectionAnimation = {
+  const mainAnimation = {
     hidden: {
       y: 100,
       opacity: 0,
@@ -39,17 +39,17 @@ function Skills () {
     <StyledSkills id="skills">
       <Container>
         <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ НАВЫКИ</Title>
-        <StyledSkillsSubtitle as={motion.h3} variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>МОЙ СТЭК</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>МОЙ СТЭК</StyledSkillsSubtitle>
         <StyledSkillsStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Stack stackList={myStack}/>
         </StyledSkillsStack>
-        <StyledSkillsSubtitle as={motion.h3} variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>ИНСТРУМЕНТЫ И ПРОЧЕЕ</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>ИНСТРУМЕНТЫ И ПРОЧЕЕ</StyledSkillsSubtitle>
         <StyledSkillsStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Stack stackList={otherStaff}/>
         </StyledSkillsStack>
-        <StyledSkillsSubtitle as={motion.h3} variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
         <StyledSkillsSoftContainer as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <SoftSkill softSkillsList={softSkillsList} />
+          <SoftSkills softSkillsList={softSkillsList} />
         </StyledSkillsSoftContainer>
       </Container>
     </StyledSkills>
