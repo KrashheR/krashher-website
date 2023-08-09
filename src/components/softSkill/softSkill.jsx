@@ -4,14 +4,31 @@ import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Description from "../description/description";
 import { motion } from "framer-motion";
 
-function SoftSkill({ title, description }) {
+function SoftSkill({ softSkillsList }) {
+  const stackAnimation = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+    visible: custom => ({
+      y: 0,
+      opacity: 1,
+      transition: {delay: custom * 0.25,
+                    ease: "easeInOut",
+                    type: "spring",
+                    bounce: 0.4,},
+  })
+  }
 
   return(
-    <StyledSoftSkill>
-      <Title level={TitleLevel.H4} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ title }</Title>
-      <Description>{ description }</Description>
-    </StyledSoftSkill>
-
+    <>
+      {softSkillsList.map((item, index) =>(
+        <StyledSoftSkill as={motion.span} variants={stackAnimation} key={index} custom={index+1}>
+          <Title level={TitleLevel.H4} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ item[0] }</Title>
+          <Description>{ item[1] }</Description>
+        </StyledSoftSkill>
+      ))}
+    </>
   );
 }
 

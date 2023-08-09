@@ -8,7 +8,8 @@ export const StyledSoftSkill = styled.span`
   border: 2px solid ${(props) => props.theme.colors.textPrimary};
   border-radius: 20px;
   color: ${(props) => props.theme.colors.textPrimary};
-  transition: 0.2s ease-in-out;
+  overflow: hidden;
+
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     padding: 14px;

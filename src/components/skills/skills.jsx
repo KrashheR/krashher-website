@@ -10,6 +10,14 @@ import { motion } from "framer-motion";
 function Skills () {
   const myStack = ["html", "css", "scss", "js", "ts", "react", "redux", "wordpress", "gulp", "webpack"];
   const otherStaff=["vscode",  "git", "figma", "styled-components", "bem"];
+  const softSkillsList=[
+    ["Коммуникабельность", "Нахожу общий язык с любоым человекомум"],
+    ["Коммуникабельность2", "2Нахожу общий язык с любоым человекомум"],
+    ["Коммуникабельность3", "3Нахожу общий язык с любоым человекомум"],
+    ["Коммуникабельность4", "4Нахожу общий язык с любоым человекомум"],
+    ["Коммуникабельность5", "5Нахожу общий язык с любоым человекомум"],
+    ["Коммуникабельность6", "6Нахожу общий язык с любоым человекомум"]
+];
 
   const sectionAnimation = {
     hidden: {
@@ -41,12 +49,7 @@ function Skills () {
         </StyledSkillsStack>
         <StyledSkillsSubtitle as={motion.h3} variants={sectionAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
         <StyledSkillsSoftContainer as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <SoftSkill title={"Коммуникабельность"} description={"Могу найти связь с любым человекоум"}></SoftSkill>
-          <SoftSkill title={"Самообучаемость"} description={"Ищу информацию "}></SoftSkill>
-          <SoftSkill title={"Усидчивость"} description={"Могу просидеть весь день, увлекшись созданием сайта"}></SoftSkill>
-          <SoftSkill title={"Пунктуальность"} description={"Могу найти связь с любым человекоум"}></SoftSkill>
-          <SoftSkill title={"Целеустремленность"} description={"Могу найти связь с любым человекоум"}></SoftSkill>
-          <SoftSkill title={"Доброжелательность"} description={":)"}></SoftSkill>
+          <SoftSkill softSkillsList={softSkillsList} />
         </StyledSkillsSoftContainer>
       </Container>
     </StyledSkills>
