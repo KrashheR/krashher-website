@@ -45,7 +45,7 @@ function Stack({ stackList }) {
     visible: custom => ({
       y: 0,
       opacity: 1,
-      transition: {delay: custom * 0.25,
+      transition: {delay: custom * 0.2,
         ease: "easeInOut",
         type: "spring",
         bounce: 0.4,},

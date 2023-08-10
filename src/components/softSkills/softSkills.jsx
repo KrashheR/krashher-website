@@ -5,6 +5,7 @@ import Description from "../description/description";
 import { motion } from "framer-motion";
 
 function SoftSkills({ softSkillsList }) {
+
   const stackAnimation = {
     hidden: {
       y: 100,
@@ -18,7 +19,7 @@ function SoftSkills({ softSkillsList }) {
                     type: "spring",
                     bounce: 0.4,},
   })
-  }
+}
 
   return(
     <>

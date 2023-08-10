@@ -16,11 +16,11 @@ export const StyledSkillsStack = styled.div`
 `;
 
 export const StyledSkillsSubtitle = styled.h3`
-  color: ${(props) => props.theme.colors.textGray};
+  color: ${(props) => props.theme.colors.textPrimary};
   font-size: 26px;
   margin: 100px 0 50px 0;
   text-align: left;
-  border-bottom: 2px solid ${(props) => props.theme.colors.textGray};
+  border-bottom: 2px solid ${(props) => props.theme.colors.textPrimary};
 
 `;
 
