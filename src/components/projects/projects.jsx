@@ -11,11 +11,11 @@ function Projects () {
       <Container>
         <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ ПРОЕКТЫ</Title>
         <StyledProjectsGrid>
-          <Card data={Data[0]}/>
-          <Card data={Data[0]}/>
-          <Card data={Data[0]}/>
-          <Card data={Data[0]}/>
-          <Card data={Data[0]}/>
+          <Card data={Data[0]} animationOrder={1}/>
+          <Card data={Data[0]} animationOrder={2}/>
+          <Card data={Data[0]} animationOrder={1}/>
+          <Card data={Data[0]} animationOrder={2}/>
+          <Card data={Data[0]} animationOrder={1}/>
         </StyledProjectsGrid>
       </Container>
     </StyledProjects>

@@ -7,10 +7,25 @@ import Link, { LinkType } from "../link/link";
 import { motion } from "framer-motion";
 
 
-function Card ({ data }) {
+function Card ({ data, animationOrder }) {
+
+  const showingAnimation = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: animationOrder * 0.25,
+        ease: "easeInOut",
+        duration: 0.4,
+        type: "tween",
+      },
+    }
+  }
 
   return (
-    <StyledCard>
+    <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>
       <StyledImage src={require("../../assets/images/oculus.png")}/>
       <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ data.title }</Title>
       <Description>

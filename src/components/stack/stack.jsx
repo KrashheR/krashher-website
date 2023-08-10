@@ -45,6 +45,7 @@ function Stack({ stackList }) {
     visible: custom => ({
       y: 0,
       opacity: 1,
+      scale: [0.1, 0.5, 2, 1],
       transition: {delay: custom * 0.2,
         ease: "easeInOut",
         type: "spring",
@@ -55,7 +56,7 @@ function Stack({ stackList }) {
   return(
     <>
       {stackList.map((item, index) =>(
-        <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src = {iconList[item]} alt={item} key={index} />
+        <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src={iconList[item]} alt={item} key={index} />
       ))}
     </>
   );

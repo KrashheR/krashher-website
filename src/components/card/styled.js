@@ -7,6 +7,7 @@ export const StyledCard = styled.div`
   box-shadow: 0px 0px 20px 10px #000;
   border-radius: 20px;
   transition: 0.3s ease-in-out;
+  overflow: hidden;
 
   &:hover{
     box-shadow: 0px 0px 30px 14px #000;
