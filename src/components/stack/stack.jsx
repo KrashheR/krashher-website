@@ -18,7 +18,7 @@ import figmaIcon from "../../assets/images/figma.png";
 import wordpressIcon from "../../assets/images/wordpress.png";
 import styledComponentsIcon from "../../assets/images/styled-components.png";
 
-function Stack({ stackList }) {
+function Stack({ stackList, cardStack }) {
   const iconList = {"html":htmlIcon,
                     "css": cssIcon,
                     "sass": sassIcon,
@@ -39,17 +39,14 @@ function Stack({ stackList }) {
 
   const stackAnimation = {
     hidden: {
-      y: 100,
+      y: cardStack? 40: 100,
       opacity: 0,
     },
     visible: custom => ({
       y: 0,
       opacity: 1,
-      scale: [0.1, 0.5, 2, 1],
-      transition: {delay: custom * 0.2,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.4,},
+      scale: [1.5, 1],
+      transition: {delay: custom * 0.2, duration: 0.45},
   })
   }
 

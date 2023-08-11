@@ -32,7 +32,7 @@ function Card ({ data, animationOrder }) {
         {data.description}
       </Description>
       <StyledStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-        <Stack stackList={data.stack}/>
+        <Stack stackList={data.stack} cardStack={true}/>
       </StyledStack>
       <StyledCardLinksContainer>
         <Link linkType={LinkType.GITHUB} href={data.github} target="_blank">Перейти на GitHub</Link>

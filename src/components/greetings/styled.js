@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const StyledGreetings = styled.h1`
   display: flex;
-  flex-direction: column;
-  gap: 16px;
   overflow: hidden;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
   color: ${(props) => props.theme.colors.textPrimary};
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 900;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {

@@ -6,11 +6,13 @@ import { DefaultTheme } from "./theme/defaultTheme";
 
 import Main from "./components/main/main";
 import Footer from "./components/footer/footer";
+import Home from "./components/home/home";
 
 function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyles />
+      <Home />
       <Header />
       <Main />
       <Footer />

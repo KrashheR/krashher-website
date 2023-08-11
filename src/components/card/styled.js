@@ -30,5 +30,5 @@ export const StyledCardLinksContainer = styled.div`
 export const StyledStack = styled.div`
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 40px 0;
 `;

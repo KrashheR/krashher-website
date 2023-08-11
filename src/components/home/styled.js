@@ -3,9 +3,9 @@ import styled from "styled-components"
 export const StyledHome = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding-bottom: 15em;
+  justify-content: center;
+  height: fit-content;
+
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     flex-direction: column;
