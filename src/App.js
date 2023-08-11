@@ -12,7 +12,6 @@ function App() {
   return (
     <ThemeProvider theme={DefaultTheme}>
       <GlobalStyles />
-      <Home />
       <Header />
       <Main />
       <Footer />

@@ -65,7 +65,8 @@ function Greetings () {
     <StyledGreetings as={motion.span} variants={blackBox} initial="initial" animate="animate">
         <motion.h1 variants={showingText} custom={1}>Привет,</motion.h1>
         <motion.h1 variants={showingText} custom={2}>я Никита,</motion.h1>
-        <motion.h1 variants={showingText} custom={1}>веб-разработчик</motion.h1>
+        <motion.h1 variants={showingText} custom={3}>веб-разработчик</motion.h1>
+        <motion.h1 variants={showingText} custom={3}>Hello, I'm Nikita, web-developer</motion.h1>
     </StyledGreetings>
   );
 }

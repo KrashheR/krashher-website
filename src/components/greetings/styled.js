@@ -10,20 +10,20 @@ export const StyledGreetings = styled.h1`
   font-weight: 900;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    font-size: max(6vw, 46px);
+    font-size: 3vw;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    font-size: 8.5vw;
+    font-size: 3vw;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     gap: 6px;
-    font-size: 9vw;
+    font-size: 3vw;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    font-size: 30px;
+    font-size: 3vw;
   }
 `;
 

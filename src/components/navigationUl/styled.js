@@ -17,6 +17,9 @@ export const StyledUl = styled.ul`
       }
     return transform;
   }};
+  pointer-events: ${(props) => {
+    return props.$toggle === true ? "auto" : "none";
+  }};
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     gap: 10px;
