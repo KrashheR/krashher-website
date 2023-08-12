@@ -8,22 +8,23 @@ export const StyledGreetings = styled.h1`
   color: ${(props) => props.theme.colors.textPrimary};
   font-size: 40px;
   font-weight: 900;
+  gap: 10px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     font-size: 3vw;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    font-size: 3vw;
+    font-size: 6vw;
+    flex-direction: column;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    gap: 6px;
-    font-size: 3vw;
+
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    font-size: 3vw;
+
   }
 `;
 
