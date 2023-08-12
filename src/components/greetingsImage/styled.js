@@ -8,7 +8,6 @@ export const StyledGreetingsImage = styled.img`
   top: 4px;
   width: calc(100% - 8px);
   height: calc(100% - 8px);
-
 `;
 
 export const StyledGreetingsImageContainer = styled.div`
@@ -28,7 +27,6 @@ export const StyledGreetingsImageContainer = styled.div`
 `;
 
 export const StyledBorder = styled.div`
-  content: '';
   position: absolute;
   z-index: -2;
   left: -50%;
