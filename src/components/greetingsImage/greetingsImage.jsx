@@ -1,8 +1,9 @@
-import React from "react";
-import { StyledGreetingsImage } from "./styled";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimate } from "framer-motion";
+import { StyledBorder, StyledGreetingsImage, StyledGreetingsImageContainer } from "./styled";
 
 function GreetingsImage ({ imageSrc }) {
+  const [scope, animate] = useAnimate();
 
   const container = {
     hidden: { opacity: 0 },
@@ -12,34 +13,30 @@ function GreetingsImage ({ imageSrc }) {
     }
   };
 
+  function RotateAnimation() {
+    animate(
+      scope.current,
+      {
+        rotate: 360
+      },
+      {
+        repeat: Infinity,
+        opacity: [1, 0.5, 1],
+        ease: "linear",
+        duration: 8
+      }
+    );
+  }
 
-  const child = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { ease: [0.01, 0.2, 0.515, 1], duration: 0.85 },
-    },
-    hidden: {
-      opacity: 0,
-      border: "4px solid  #EDF738",
-      borderRadius: "50%",
-      y: "50%"
-    },
-  };
+  useEffect(() => {
+    RotateAnimation();
+  }, []);
 
   return (
-    <motion.div
-    variants={container}
-    initial="hidden"
-    animate="visible"
-  >
-    <motion.div variants={child} >
+    <StyledGreetingsImageContainer as={motion.div} variants={container} initial="hidden" animate="visible">
+      <StyledBorder as={motion.div} ref={scope}></StyledBorder>
       <StyledGreetingsImage src={imageSrc} />
-    </motion.div>
-  </motion.div>
-
-
-
+    </StyledGreetingsImageContainer>
   )
 }
 
