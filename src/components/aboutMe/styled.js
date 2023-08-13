@@ -18,3 +18,13 @@ export const StyledAboutMe = styled.section`
   }
 `;
 
+export const StyledAboutMeText = styled.p`
+  max-width: 700px;
+  font-weight: 900;
+  color: ${(props) => props.theme.colors.textPrimary};
+  font-size: 25px;
+`;
+
+export const StyledAboutMeLink = styled.a`
+  color: red;
+`;

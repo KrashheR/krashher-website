@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledGreetingsImage = styled.img`
+export const StyledMyPhoto = styled.img`
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -10,7 +10,7 @@ export const StyledGreetingsImage = styled.img`
   height: calc(100% - 8px);
 `;
 
-export const StyledGreetingsImageContainer = styled.div`
+export const StyledMyPhotoContainer = styled.div`
   position: relative;
 	z-index: 0;
 	width: 350px;
@@ -21,8 +21,18 @@ export const StyledGreetingsImageContainer = styled.div`
   box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.3);
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
+    width: 320px;
+    height: 320px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     width: 300px;
     height: 300px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    width: 260px;
+    height: 260px;
   }
 `;
 

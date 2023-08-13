@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimate } from "framer-motion";
-import { StyledBorder, StyledGreetingsImage, StyledGreetingsImageContainer } from "./styled";
+import { StyledBorder, StyledMyPhoto, StyledMyPhotoContainer } from "./styled";
 
-function GreetingsImage ({ imageSrc }) {
+function MyPhoto ({ imageSrc }) {
   const [scope, animate] = useAnimate();
 
   const container = {
@@ -30,14 +30,14 @@ function GreetingsImage ({ imageSrc }) {
 
   useEffect(() => {
     RotateAnimation();
-  }, []);
+  },);
 
   return (
-    <StyledGreetingsImageContainer as={motion.div} variants={container} initial="hidden" animate="visible">
+    <StyledMyPhotoContainer as={motion.div} variants={container} initial="hidden" animate="visible">
       <StyledBorder as={motion.div} ref={scope}></StyledBorder>
-      <StyledGreetingsImage src={imageSrc} />
-    </StyledGreetingsImageContainer>
+      <StyledMyPhoto src={imageSrc} alt="Моя фотография"/>
+    </StyledMyPhotoContainer>
   )
 }
 
-export default GreetingsImage;
+export default MyPhoto;
