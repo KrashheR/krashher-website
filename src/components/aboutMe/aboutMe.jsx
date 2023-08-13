@@ -3,7 +3,6 @@ import { StyledAboutMe, StyledAboutMeLink } from "./styled";
 import Container from "../container/container";
 import myPhotoImg from "../../assets/images/my_photo.jpg";
 import MyPhoto from "../myPhoto/myPhoto";
-import Description from "../description/description";
 import { StyledAboutMeText } from "./styled";
 
 function AboutMe () {

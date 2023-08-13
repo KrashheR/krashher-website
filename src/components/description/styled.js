@@ -8,6 +8,7 @@ export const StyledDescription = styled.p`
   text-align: center;
 
   @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
-    font-size: 16px;
+    font-size: 18px;
+    padding: 0 5px;
   }
 `;

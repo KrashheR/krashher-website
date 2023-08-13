@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const StyledEducation = styled.section`
   margin: 100px 0;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    margin: 0;
+  }
 `;
 
 export const StyledEducationGrid = styled.div`

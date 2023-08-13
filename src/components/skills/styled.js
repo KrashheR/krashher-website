@@ -27,15 +27,13 @@ export const StyledSkillsSubtitle = styled.h3`
 export const StyledSkillsSoftContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   grid-gap: 40px;
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
