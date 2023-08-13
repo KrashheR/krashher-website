@@ -20,9 +20,14 @@ export const StyledMyPhotoContainer = styled.div`
 	padding: 2rem;
   box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.3);
 
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    width: 300px;
+    height: 300px;
+  }
+
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
