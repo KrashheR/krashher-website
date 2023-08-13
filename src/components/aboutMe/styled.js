@@ -26,5 +26,5 @@ export const StyledAboutMeText = styled.p`
 `;
 
 export const StyledAboutMeLink = styled.a`
-  color: red;
+  color: #dc2b46;
 `;
