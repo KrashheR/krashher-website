@@ -17,9 +17,8 @@ function Card ({ data, animationOrder }) {
       opacity: 1,
       transition: {
         delay: animationOrder * 0.25,
-        ease: "easeInOut",
-        duration: 0.3,
-        type: "tween",
+        ease: "ease",
+        duration: 0.5,
       },
     }
   }

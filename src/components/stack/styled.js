@@ -19,6 +19,7 @@ export const StyledStackSpan = styled.span`
   color: ${(props) => props.theme.colors.textGray};
   text-align: center;
   font-size: 18px;
+  font-weight: 600;
 
   @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: 16px;
