@@ -10,11 +10,8 @@ export const StyledEducation = styled.section`
 
 export const StyledEducationGrid = styled.div`
   display: grid;
-  grid-template-areas: "universityBac . ."
-                       "universityBac . htmlacademy"
-                       ". . ."
-                       ". . learnjs"
-                       "universityMag . ."
+  grid-template-areas: "universityBac . htmlacademy"
+                       "andOther . learnjs"
                        "universityMag . react";
   grid-gap: 40px;
   margin-top: 80px;

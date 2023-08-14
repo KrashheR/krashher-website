@@ -20,12 +20,14 @@ export const StyledAboutMe = styled.section`
 
 export const StyledAboutMeText = styled.p`
   max-width: 600px;
-  font-weight: 900;
-  color: ${(props) => props.theme.colors.textPrimary};
+  font-weight: 800;
+  color: ${(props) => props.theme.colors.textGray};
   font-size: 25px;
+  transition: 0.8s ease;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     max-width: 450px;
+    padding: 5px;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
@@ -36,11 +38,16 @@ export const StyledAboutMeText = styled.p`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
 `;
 
 export const StyledAboutMeLink = styled.a`
-  color: #dc2b46;
+  color: ${(props) => props.theme.colors.textPrimary};
+`;
+
+export const StyledKeyword = styled.b`
+  color: ${(props) => props.theme.colors.textPrimary};
+  font-weight: 800;
 `;

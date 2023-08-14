@@ -19,7 +19,7 @@ function Skills () {
     ["Ответственность", "Имею опыт выполнения поставленных задач в срок"]
 ];
 
-  const mainAnimation = {
+  const titleAnimation = {
     hidden: {
       x: "-30%",
       opacity: 0,
@@ -39,15 +39,15 @@ function Skills () {
     <StyledSkills id="skills">
       <Container>
         <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ НАВЫКИ</Title>
-        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1}>МОЙ СТЭК</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={titleAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={1}>МОЙ СТЭК</StyledSkillsSubtitle>
         <StyledSkillsStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Stack stackList={myStack} cardStack={false}/>
         </StyledSkillsStack>
-        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2}>ИНСТРУМЕНТЫ И ПРОЧЕЕ</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={titleAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={2}>ИНСТРУМЕНТЫ И ПРОЧЕЕ</StyledSkillsSubtitle>
         <StyledSkillsStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <Stack stackList={otherStaff} cardStack={false}/>
         </StyledSkillsStack>
-        <StyledSkillsSubtitle as={motion.h3} variants={mainAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
+        <StyledSkillsSubtitle as={motion.h3} variants={titleAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
         <StyledSkillsSoftContainer as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <SoftSkills softSkillsList={softSkillsList} />
         </StyledSkillsSoftContainer>

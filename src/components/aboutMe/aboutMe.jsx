@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledAboutMe, StyledAboutMeLink } from "./styled";
+import { StyledAboutMe, StyledAboutMeLink, StyledKeyword } from "./styled";
 import Container from "../container/container";
 import myPhotoImg from "../../assets/images/my_photo.jpg";
 import MyPhoto from "../myPhoto/myPhoto";
@@ -11,9 +11,9 @@ function AboutMe () {
     <Container>
       <StyledAboutMe>
         <MyPhoto imageSrc={myPhotoImg}></MyPhoto>
-        <StyledAboutMeText>Я с детства увлекаюсь IT, во время учёбы занимался геймдизайном и вёл <StyledAboutMeLink href="https://www.youtube.com/@krashher2690">YouTube</StyledAboutMeLink> канал об этом.
-          Сейчас полностью сконцентрирован на становлении frontend web разработчиком.
-          Активно изучаю реакт, грокаю алгоритмы на leetcode и слушаю веб-стандарты.</StyledAboutMeText>
+        <StyledAboutMeText><StyledKeyword>C детства увлекаюсь IT,</StyledKeyword> во время учёбы занимался геймдизайном и вёл <StyledAboutMeLink href="https://www.youtube.com/@krashher2690">YouTube</StyledAboutMeLink> канал об этом.
+          Сейчас нацелен на становлении <StyledKeyword>Frontend Web разработчиком,</StyledKeyword> ведь эта сфера оказалась на удивленее интересной :)
+          Активно изучаю <StyledKeyword>React,</StyledKeyword> грокаю алгоритмы на <StyledKeyword>Leetcode</StyledKeyword> и слушаю <StyledKeyword>веб-стандарты.</StyledKeyword></StyledAboutMeText>
       </StyledAboutMe>
     </Container>
   );

@@ -12,6 +12,7 @@ function EducationPlace ({ position, title, description, animationOrder }) {
     visible: {
       opacity: 1,
       transition: {delay: animationOrder * 0.25,
+        duration: 4,
         ease: "easeInOut",
         type: "spring",
         bounce: 0.4,},

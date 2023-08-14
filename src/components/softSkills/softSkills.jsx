@@ -14,7 +14,7 @@ function SoftSkills({ softSkillsList }) {
     visible: custom => ({
       y: 0,
       opacity: 1,
-      transition: {delay: custom * 0.25,
+      transition: {delay: custom * 0.5,
                     ease: "easeInOut",
                     type: "spring",
                     bounce: 0.4,},

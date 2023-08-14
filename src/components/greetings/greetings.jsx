@@ -28,7 +28,7 @@ function Greetings () {
       opacity: 1,
       y: 0,
       transition: {
-        delay: custom * 0.7,
+        delay: custom * 0.9,
         duration: 1,
         ease: "easeInOut",
       },

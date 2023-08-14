@@ -11,3 +11,17 @@ export const StyledStackImg = styled.img`
   }
 `;
 
+export const StyledStackSpan = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: ${(props) => props.theme.colors.textGray};
+  text-align: center;
+  font-size: 18px;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    font-size: 16px;
+  }
+`;
+

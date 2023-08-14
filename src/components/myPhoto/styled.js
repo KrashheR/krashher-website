@@ -19,6 +19,11 @@ export const StyledMyPhotoContainer = styled.div`
 	overflow: hidden;
 	padding: 2rem;
   box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.3);
+  transition: 0.4s ease;
+
+  &:hover{
+    box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.6);
+  }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     width: 300px;
