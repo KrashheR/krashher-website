@@ -17,7 +17,7 @@ function Card ({ data, animationOrder }) {
       opacity: 1,
       transition: {
         delay: animationOrder * 0.25,
-        ease: "ease",
+        ease: "easeIn",
         duration: 0.5,
       },
     }
@@ -25,7 +25,7 @@ function Card ({ data, animationOrder }) {
 
   return (
     <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-      <StyledImage src={require("../../assets/images/oculus.png")}/>
+      <StyledImage src={require("../../assets/images/oculus.webp")} alt={data.title + " скриншот"}/>
       <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ data.title }</Title>
       <Description>
         {data.description}

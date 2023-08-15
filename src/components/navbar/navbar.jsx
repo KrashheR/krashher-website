@@ -1,4 +1,4 @@
-import React, {  useState, useRef } from "react";
+import React, {  useState } from "react";
 import { StyledNavToggler, StyledNav } from "./styled";
 import Hamburger from "../hamburger/hamburger";
 import NavigationUl from "../navigationUl/navigationUl";
@@ -9,10 +9,10 @@ function Navbar () {
 
   return (
     <StyledNav>
-    <NavigationUl toggle={openHamburger} />
-    <StyledNavToggler onClick={() => setHamburger(!openHamburger)}>
-      <Hamburger toggle={openHamburger} />
-    </StyledNavToggler>
+      <NavigationUl toggle={openHamburger} />
+      <StyledNavToggler type="button" onClick={() => setHamburger(!openHamburger)}>
+        <Hamburger toggle={openHamburger} />
+      </StyledNavToggler>
   </StyledNav>
   )
 }

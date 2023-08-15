@@ -35,7 +35,7 @@ function MyPhoto ({ imageSrc }) {
   return (
     <StyledMyPhotoContainer as={motion.div} variants={container} initial="hidden" animate="visible">
       <StyledBorder as={motion.div} ref={scope}></StyledBorder>
-      <StyledMyPhoto src={imageSrc} alt="Моя фотография"/>
+      <StyledMyPhoto src={imageSrc} alt="Моя фотография" loading="lazy"/>
     </StyledMyPhotoContainer>
   )
 }

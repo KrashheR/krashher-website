@@ -1,22 +1,22 @@
 import React from "react";
 import { StyledStackImg, StyledStackSpan } from "./styled";
 import { motion } from "framer-motion";
-import jsIcon from "../../assets/images/js.png";
-import htmlIcon from "../../assets/images/html.png";
-import scssIcon from "../../assets/images/scss.png";
-import sassIcon from "../../assets/images/sass.png";
-import gulpIcon from "../../assets/images/gulp.png";
-import bemIcon from "../../assets/images/bem.png";
-import cssIcon from "../../assets/images/css.png";
+import jsIcon from "../../assets/images/js.svg";
+import htmlIcon from "../../assets/images/html.svg";
+import scssIcon from "../../assets/images/scss.svg";
+import sassIcon from "../../assets/images/sass.svg";
+import gulpIcon from "../../assets/images/gulp.svg";
+import bemIcon from "../../assets/images/bem.svg";
+import cssIcon from "../../assets/images/css.svg";
 import gitIcon from "../../assets/images/git.svg";
 import reactIcon from "../../assets/images/react.svg";
 import reduxIcon from "../../assets/images/redux.svg";
-import tsIcon from "../../assets/images/ts.png";
+import tsIcon from "../../assets/images/ts.svg";
 import vscodeIcon from "../../assets/images/vscode.svg";
 import webpackIcon from "../../assets/images/webpack.svg";
-import figmaIcon from "../../assets/images/figma.png";
-import wordpressIcon from "../../assets/images/wordpress.png";
-import styledComponentsIcon from "../../assets/images/styled-components.png";
+import figmaIcon from "../../assets/images/figma.svg";
+import wordpressIcon from "../../assets/images/wordpress.svg";
+import styledComponentsIcon from "../../assets/images/styled-components.svg";
 
 function Stack({ stackList, cardStack }) {
   const iconsList = {"html":htmlIcon,
@@ -72,7 +72,7 @@ function Stack({ stackList, cardStack }) {
     return(
       <>
         {stackList.map((item, index) =>(
-          <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src={iconsList[item]} alt={item} key={index} />
+          <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src={iconsList[item]} alt={item} loading="lazy" key={index} />
         ))}
       </>
     );
@@ -81,7 +81,7 @@ function Stack({ stackList, cardStack }) {
       <>
         {stackList.map((item, index) =>(
           <StyledStackSpan as={motion.span} custom={index+1} key={index} variants={stackAnimation}>
-            <StyledStackImg src={iconsList[item]} alt={item} />
+            <StyledStackImg src={iconsList[item]} alt={"логотип " + item} />
             <p>{namesList[item]}</p>
           </StyledStackSpan>
         ))}
