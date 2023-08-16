@@ -25,7 +25,7 @@ function SoftSkills({ softSkillsList }) {
     <>
       {softSkillsList.map((item, index) =>(
         <StyledSoftSkill as={motion.span} variants={stackAnimation} key={index} custom={index+1}>
-          <Title level={TitleLevel.H4} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ item[0] }</Title>
+          <Title level={TitleLevel.H4} color={TitleColor.PRIMARY} type={TitleType.SOFTSKILLS}>{ item[0] }</Title>
           <Description>{ item[1] }</Description>
         </StyledSoftSkill>
       ))}

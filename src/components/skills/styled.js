@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSkills = styled.article`
+export const StyledSkills = styled.section`
 
 `;
 
@@ -18,7 +18,7 @@ export const StyledSkillsStack = styled.div`
 export const StyledSkillsSubtitle = styled.h3`
   color: ${(props) => props.theme.colors.textPrimary};
   font-size: 26px;
-  margin: 100px 0 50px 0;
+  margin: 80px 0 50px 0;
   text-align: left;
   border-bottom: 2px solid ${(props) => props.theme.colors.textPrimary};
   font-weight: 700;
@@ -41,7 +41,7 @@ export const StyledSkillsSoftContainer = styled.div`
   align-items: center;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: repeat(3, 1fr);
   }
 

@@ -17,7 +17,8 @@ export const TitleColor = {
 
 export const TitleType = {
   SECTION: "section",
-  CARD: "card"
+  CARD: "card",
+  SOFTSKILLS: "softSkills"
 }
 
 function Title ({ level, color, type, children }) {

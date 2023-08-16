@@ -3,7 +3,13 @@ import { TitleColor, TitleType } from "./title";
 
 export const StyledTitle = styled.h1`
   padding: ${(props) => {
-    return props.$titleType === TitleType.CARD ? "0 0 5px 0" : "0";
+    let padding = "0";
+    if (props.$titleType === TitleType.CARD) {
+      padding = "10px 0 5px 0";
+    } else if (props.$titleType === TitleType.SOFTSKILLS) {
+      padding = "0 0 5px 0";
+    }
+    return padding;
   }};
   color: ${(props) => {
     return props.$color === TitleColor.GRAY ? props.theme.colors.textGray : props.theme.colors.textPrimary;
@@ -23,9 +29,6 @@ export const StyledTitle = styled.h1`
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: ${(props) => {
       return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobile : props.theme.fontSizes.cardTitleMobile
-    }};
-    padding: ${(props) => {
-      return props.$titleType === TitleType.CARD ? "0 0 5px 0" : "0";
     }};
   }
 

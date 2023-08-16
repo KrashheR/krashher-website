@@ -7,7 +7,7 @@ export const StyledProjects = styled.section`
 export const StyledProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  margin-top: 80px;
+  margin-top: 50px;
   grid-gap: 80px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}){
