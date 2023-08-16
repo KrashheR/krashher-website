@@ -16,7 +16,7 @@ export const DefaultTheme = {
   },
   fontSizes: {
     cardTitle: "24px",
-    cardTitleMobile: "20px",
+    cardTitleMobile: "18px",
     cardTitleMobileSmall: "16px",
     sectionTitle: "50px",
     sectionTitleMobile: "30px",

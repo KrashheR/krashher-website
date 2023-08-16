@@ -3,7 +3,7 @@ import { TitleColor, TitleType } from "./title";
 
 export const StyledTitle = styled.h1`
   padding: ${(props) => {
-    return props.$titleType === TitleType.CARD ? "14px 0" : "0";
+    return props.$titleType === TitleType.CARD ? "0 0 5px 0" : "0";
   }};
   color: ${(props) => {
     return props.$color === TitleColor.GRAY ? props.theme.colors.textGray : props.theme.colors.textPrimary;
@@ -25,7 +25,7 @@ export const StyledTitle = styled.h1`
       return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobile : props.theme.fontSizes.cardTitleMobile
     }};
     padding: ${(props) => {
-      return props.$titleType === TitleType.CARD ? "14px 0" : "0";
+      return props.$titleType === TitleType.CARD ? "0 0 5px 0" : "0";
     }};
   }
 

@@ -14,6 +14,6 @@ export const StyledSoftSkill = styled.span`
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     padding: 14px;
-    width: -webkit-fill-available;
+    width: 80vw;
   }
 `;
