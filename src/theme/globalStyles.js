@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: ${props => props.theme.colors.bg};
   }
 `

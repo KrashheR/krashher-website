@@ -9,7 +9,7 @@ function AboutMe () {
 
   return(
     <Container>
-      <StyledAboutMe id="#aboutMe">
+      <StyledAboutMe id="#aboutme">
         <MyPhoto imageSrc={myPhotoImg}></MyPhoto>
         <StyledAboutMeText><StyledKeyword>C детства увлекаюсь IT,</StyledKeyword> во время учёбы занимался геймдизайном и вёл <StyledAboutMeLink href="https://www.youtube.com/@krashher2690">YouTube</StyledAboutMeLink> канал об этом.
           Сейчас нацелен на становлении <StyledKeyword>Frontend Web разработчиком,</StyledKeyword> ведь эта сфера оказалась на удивленее интересной :)

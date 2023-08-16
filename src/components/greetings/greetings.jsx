@@ -37,9 +37,9 @@ function Greetings () {
 
   return (
     <StyledGreetings as={motion.span} variants={blackBox} initial="initial" animate="animate">
-        <motion.h1 variants={showingText} custom={1}>Привет,</motion.h1>
-        <motion.h1 variants={showingText} custom={2}>я Никита,</motion.h1>
-        <motion.h1 variants={showingText} custom={3}>Веб-разработчик</motion.h1>
+        <motion.h1 variants={showingText} custom={0}>Привет,</motion.h1>
+        <motion.h1 variants={showingText} custom={1}>я Никита,</motion.h1>
+        <motion.h1 variants={showingText} custom={2}>Веб-разработчик</motion.h1>
     </StyledGreetings>
   );
 }

@@ -6,7 +6,7 @@ export const StyledSoftSkill = styled.span`
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid ${(props) => props.theme.colors.textPrimary};
   border-radius: 20px;
   color: ${(props) => props.theme.colors.textPrimary};

@@ -9,15 +9,17 @@ export const DefaultTheme = {
     telegram: "#29a0dc"
   },
   deviceSizes: {
-    mobileSmall: "376px",
+    mobileSmall: "375px",
     mobile: "576px",
     tablet: "824px",
     laptop: "1240px",
   },
   fontSizes: {
     cardTitle: "24px",
-    cardTitleMobile: "18px",
+    cardTitleMobile: "20px",
+    cardTitleMobileSmall: "16px",
     sectionTitle: "50px",
     sectionTitleMobile: "30px",
+    sectionTitleMobileSmall: "28px",
   }
 };

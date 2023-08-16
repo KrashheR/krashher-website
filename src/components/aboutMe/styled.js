@@ -5,24 +5,26 @@ export const StyledAboutMe = styled.section`
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  padding-bottom: 15em;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 5em;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    gap: 0;
+    gap: 20px;
+    padding-bottom: 10px;
   }
 `;
 
 export const StyledAboutMeText = styled.p`
   max-width: 600px;
-  font-weight: 800;
+  font-weight: 300;
   color: ${(props) => props.theme.colors.textGray};
   font-size: 25px;
+  text-align: left;
   transition: 0.8s ease;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
@@ -40,14 +42,14 @@ export const StyledAboutMeText = styled.p`
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: 20px;
   }
-
 `;
 
 export const StyledAboutMeLink = styled.a`
   color: ${(props) => props.theme.colors.textPrimary};
+  font-weight: 400;
 `;
 
 export const StyledKeyword = styled.b`
   color: ${(props) => props.theme.colors.textPrimary};
-  font-weight: 800;
+  font-weight: 400;
 `;

@@ -3,51 +3,36 @@ import { TitleColor, TitleType } from "./title";
 
 export const StyledTitle = styled.h1`
   padding: ${(props) => {
-    let padding = "0";
-    if(props.$titleType === TitleType.CARD) {
-      padding = "14px 0";
-    }
-    return padding;
+    return props.$titleType === TitleType.CARD ? "14px 0" : "0";
   }};
   color: ${(props) => {
-    let textColor = props.theme.colors.textPrimary;
-    if(props.$color === TitleColor.GRAY) {
-      textColor = props.theme.colors.textGray;
-    }
-    return textColor;
+    return props.$color === TitleColor.GRAY ? props.theme.colors.textGray : props.theme.colors.textPrimary;
   }};
   font-size: ${(props) => {
-    let fontSize = props.theme.fontSizes.cardTitle;
-    if(props.$titleType === TitleType.SECTION) {
-      fontSize = props.theme.fontSizes.sectionTitle;
-    }
-    return fontSize;
+    return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitle : props.theme.fontSizes.cardTitle;
   }};
   font-weight: ${(props) => {
-    let fontWeight = 700;
-    if(props.$titleType === TitleType.SECTION) {
-      fontWeight = 900;
-    }
-    return fontWeight;
+    return props.$titleType === TitleType.SECTION ? 700 : 400;
   }};
   text-align: ${(props) => {
-    let textAlign = "center";
-    if(props.$titleType === TitleType.SECTION) {
-      textAlign = "left";
-    }
-    return textAlign;
+    return props.$titleType === TitleType.SECTION ? "left" : "center";
   }};
 
   text-transform: uppercase;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: ${(props) => {
-      let fontSize = props.theme.fontSizes.cardTitleMobile;
-      if(props.$titleType === TitleType.SECTION) {
-        fontSize = props.theme.fontSizes.sectionTitleMobile;
-      }
-      return fontSize;
-    }}
+      return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobile : props.theme.fontSizes.cardTitleMobile
+    }};
+    padding: ${(props) => {
+      return props.$titleType === TitleType.CARD ? "14px 0" : "0";
+    }};
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
+    font-size: ${(props) => {
+      return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobileSmall : props.theme.fontSizes.cardTitleMobileSmall
+    }};
   }
 
 `;

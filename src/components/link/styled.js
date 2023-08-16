@@ -22,7 +22,7 @@ export const StyledLink = styled.a`
     return color;
   }};
   border-radius: 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   font-size: 16px;
   transition: 0.3s ease;

@@ -41,8 +41,8 @@ export const StyledMyPhotoContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 `;
 

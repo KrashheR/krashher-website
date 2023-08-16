@@ -11,11 +11,7 @@ export const StyledUl = styled.ul`
   }};
   transition: 0.7s ease;
   transform: ${(props) => {
-    let transform = "translate3d(80px, 0px, 0px)";
-      if(props.$toggle === true) {
-        transform = "translate3d(0px, 0px, 0px)";
-      }
-    return transform;
+    return props.$toggle === true ? "translate3d(0px, 0px, 0px)" : "translate3d(80px, 0px, 0px)";
   }};
   pointer-events: ${(props) => {
     return props.$toggle === true ? "auto" : "none";
@@ -37,18 +33,14 @@ export const StyledUl = styled.ul`
     opacity: 1;
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
-      let transform = "translate3d(0px, -100%, 0px)";
-        if(props.$toggle === true) {
-          transform = "translate3d(0px, 0px, 0px)";
-        }
-      return transform;
+      return props.$toggle === true ? "translate3d(0px, 0px, 0px)" : "translate3d(0px, -100%, 0px)";
     }};
   }
 `;
 
 export const StyledLi = styled.li`
   font-size: 0.8rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.textPrimary};
 

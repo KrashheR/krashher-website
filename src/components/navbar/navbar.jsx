@@ -10,7 +10,7 @@ function Navbar () {
   return (
     <StyledNav>
       <NavigationUl toggle={openHamburger} />
-      <StyledNavToggler type="button" onClick={() => setHamburger(!openHamburger)}>
+      <StyledNavToggler type="button" aria-label="Открыть меню навигации" onClick={() => setHamburger(!openHamburger)}>
         <Hamburger toggle={openHamburger} />
       </StyledNavToggler>
   </StyledNav>

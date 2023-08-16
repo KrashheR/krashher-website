@@ -7,7 +7,7 @@ export const StyledGreetings = styled.h1`
   justify-content: center;
   color: ${(props) => props.theme.colors.textPrimary};
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 700;
   gap: 10px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
@@ -17,14 +17,6 @@ export const StyledGreetings = styled.h1`
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     font-size: 6vw;
     flex-direction: column;
-  }
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-
-  }
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-
   }
 `;
 
