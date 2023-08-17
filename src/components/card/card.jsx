@@ -23,9 +23,11 @@ function Card ({ data, animationOrder }) {
     }
   }
 
+  let imgLink = data.image;
+
   return (
     <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-      <StyledImage src={require("../../assets/images/oculus.webp")} alt={data.title + " скриншот"}/>
+      <StyledImage src={process.env.PUBLIC_URL + data.image} alt={data.title + " скриншот"}/>
       <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ data.title }</Title>
       <Description>
         {data.description}

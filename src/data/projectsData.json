@@ -1,7 +1,7 @@
 [
   {
     "id":0,
-    "image": "../../assets/images/oculus.png",
+    "image": "/oculus.webp",
     "title": "Oculus - website",
     "description": "Cайт разработан в соответствии с методологией БЭМ. В его основе HTML, SCSS(SASS), JavaScript. Сборка проекта производилась с помощью GULP 4. Была произведена оптимизация скорости работы сайта путём минимизации css и js файлов, преобразования изображений в webp формат и их сжатия.",
     "stack": ["html", "sass", "js", "gulp", "bem"],

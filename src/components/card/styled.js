@@ -30,7 +30,7 @@ export const StyledCardLinksContainer = styled.div`
 export const StyledStack = styled.div`
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin: 30px 0;
 
   @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     margin: 20px 0;
