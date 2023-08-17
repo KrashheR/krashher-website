@@ -18,6 +18,8 @@ export const DefaultTheme = {
     cardTitle: "24px",
     cardTitleMobile: "18px",
     cardTitleMobileSmall: "16px",
+    softSkillsTitle: "24px",
+    softSkillsTitleTablet: "22px",
     sectionTitle: "50px",
     sectionTitleMobile: "30px",
     sectionTitleMobileSmall: "28px",

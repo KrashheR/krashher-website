@@ -41,7 +41,7 @@ export const StyledSkillsSoftContainer = styled.div`
   align-items: center;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(3, 1fr);
   }
 

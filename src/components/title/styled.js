@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { TitleColor, TitleType } from "./title";
 
 export const StyledTitle = styled.h1`
+  text-transform: uppercase;
   padding: ${(props) => {
     let padding = "0";
     if (props.$titleType === TitleType.CARD) {
@@ -24,7 +25,13 @@ export const StyledTitle = styled.h1`
     return props.$titleType === TitleType.SECTION ? "left" : "center";
   }};
 
-  text-transform: uppercase;
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}){
+    font-size: ${(props) => {
+      if (props.$titleType === TitleType.SOFTSKILLS) {
+        return props.theme.fontSizes.softSkillsTitleTablet;
+      }
+    }};
+  }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
     font-size: ${(props) => {
