@@ -6,7 +6,7 @@ export const StyledProjects = styled.section`
 
 export const StyledProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   margin-top: 50px;
   grid-gap: 80px;
 

@@ -5,7 +5,7 @@ export const StyledTitle = styled.h1`
   padding: ${(props) => {
     let padding = "0";
     if (props.$titleType === TitleType.CARD) {
-      padding = "10px 0 5px 0";
+      padding = "18px 0 12px 0";
     } else if (props.$titleType === TitleType.SOFTSKILLS) {
       padding = "0 0 5px 0";
     }
