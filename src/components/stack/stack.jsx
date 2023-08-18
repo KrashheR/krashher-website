@@ -57,7 +57,7 @@ function Stack({ stackList, cardStack }) {
 
   const stackAnimation = {
     hidden: {
-      y: cardStack? 40: 100,
+      y: cardStack? 30: 100,
       opacity: 0,
     },
     visible: custom => ({
