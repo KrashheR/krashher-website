@@ -4,8 +4,8 @@ export const StyledNav = styled.nav`
   display: flex;
 `;
 
-export const StyledNavToggler = styled.button`
-  display: flex;
+export const StyledToggler = styled.button`
+  display: none;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -23,6 +23,7 @@ export const StyledNavToggler = styled.button`
   }
 
   @media(max-width: ${(props) => props.theme.deviceSizes.tablet}) {
+    display: flex;
     z-index: 2;
   }
 
