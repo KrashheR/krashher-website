@@ -23,8 +23,6 @@ function Card ({ data, animationOrder }) {
     }
   }
 
-  let imgLink = data.image;
-
   return (
     <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>
       <StyledImage src={process.env.PUBLIC_URL + data.image} alt={data.title + " скриншот"}/>
