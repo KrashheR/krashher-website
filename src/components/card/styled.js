@@ -9,12 +9,25 @@ export const StyledCard = styled.div`
   transition: 0.3s ease-in-out;
   overflow: hidden;
 
+  animation: showingCard 1s forwards;
+      -webkit-animation: showingCard 1s forwards;
+      -moz-animation: showingCard 1s forwards;
+
   &:hover{
     box-shadow: 0px 0px 30px 14px #000;
   }
 
   @media(max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     max-width: 500px;
+  }
+
+  @-webkit-keyframes showingCard {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;
 
