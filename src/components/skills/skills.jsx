@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledSkills, StyledSkillsSoftContainer, StyledSkillsStack, StyledSkillsSubtitle } from "./styled";
+import { StyledSkills, StyledSoftSkillsContainer, StyledSkillsStack, StyledSkillsSubtitle } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
 import SoftSkills from "../softSkills/softSkills";
@@ -48,9 +48,9 @@ function Skills () {
           <Stack stackList={otherStaff} cardStack={false}/>
         </StyledSkillsStack>
         <StyledSkillsSubtitle as={motion.h3} variants={titleAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>SOFT-СКИЛЛЫ</StyledSkillsSubtitle>
-        <StyledSkillsSoftContainer as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+        <StyledSoftSkillsContainer as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           <SoftSkills softSkillsList={softSkillsList} />
-        </StyledSkillsSoftContainer>
+        </StyledSoftSkillsContainer>
       </Container>
     </StyledSkills>
   );

@@ -11,7 +11,7 @@ export const DefaultTheme = {
   deviceSizes: {
     mobileSmall: "375px",
     mobile: "576px",
-    tablet: "824px",
+    tablet: "904px",
     laptop: "1240px",
   },
   fontSizes: {

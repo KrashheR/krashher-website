@@ -6,9 +6,13 @@ export const StyledSkills = styled.section`
 
 export const StyledSkillsStack = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 40px;
   align-items: center;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -33,7 +37,7 @@ export const StyledSkillsSubtitle = styled.h3`
 
 `;
 
-export const StyledSkillsSoftContainer = styled.div`
+export const StyledSoftSkillsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   grid-template-rows: repeat(2, 1fr);
