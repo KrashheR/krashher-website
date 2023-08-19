@@ -57,13 +57,14 @@ function Stack({ stackList, cardStack }) {
 
   const stackAnimation = {
     hidden: {
-      y: cardStack? 30: 100,
+      y: 30,
       opacity: 0,
+      scale: 1.5,
     },
     visible: custom => ({
       y: 0,
       opacity: 1,
-      scale: [1.3, 1],
+      scale: 1,
       transition: {delay: custom * 0.2, duration: 0.45},
   })
   }
@@ -80,7 +81,7 @@ function Stack({ stackList, cardStack }) {
     return(
       <>
         {stackList.map((item, index) =>(
-          <StyledStackSpan as={motion.span} custom={index+1} key={index} variants={stackAnimation}>
+          <StyledStackSpan as={motion.span} custom={index+1} key={index} variants={stackAnimation} viewport={{ once: true }}>
             <StyledStackImg src={iconsList[item]} alt={"логотип " + item} />
             <p>{namesList[item]}</p>
           </StyledStackSpan>

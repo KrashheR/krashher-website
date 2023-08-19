@@ -7,14 +7,17 @@ function Greetings () {
 
   const blackBox = {
     initial: {
-      height: "100vh",
+      opacity: 1,
+      y: 0,
     },
     animate: {
       height: 0,
+      opacity: 0,
+      y: "-50%",
       transition: {
         when: "afterChildren",
         duration: 1,
-        ease: "easeInOut",
+        ease: "easeOut",
       },
     }
   };
@@ -36,7 +39,7 @@ function Greetings () {
   };
 
   return (
-    <StyledGreetings as={motion.span} variants={blackBox} initial="initial" animate="animate">
+    <StyledGreetings as={motion.span} variants={blackBox} initial="initial" animate="animate" viewport={{ once: true }}>
         <motion.h1 variants={showingText} custom={0}>Привет,</motion.h1>
         <motion.h1 variants={showingText} custom={1}>я Никита,</motion.h1>
         <motion.h1 variants={showingText} custom={2}>Веб-разработчик</motion.h1>

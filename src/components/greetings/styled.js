@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledGreetings = styled.h1`
   display: flex;
   overflow: hidden;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   color: ${(props) => props.theme.colors.textPrimary};

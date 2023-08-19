@@ -1,21 +1,24 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { StyledProjects, StyledProjectsGrid } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
-import Card from "../card/card";
 import Data from "../../data/projectsData.json";
 import Container from "../container/container";
+import { useInView } from "react-intersection-observer";
+const Card = lazy(() => import("../card/card"));
 
 function Projects () {
+  const { ref, inView } = useInView();
+
   return (
     <StyledProjects id="projects">
       <Container>
         <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ ПРОЕКТЫ</Title>
-        <StyledProjectsGrid>
-          <Card data={Data[0]} animationOrder={1}/>
-          <Card data={Data[0]} animationOrder={2}/>
-          <Card data={Data[0]} animationOrder={1}/>
-          <Card data={Data[0]} animationOrder={2}/>
-          <Card data={Data[0]} animationOrder={1}/>
+        <StyledProjectsGrid ref={ref}>
+          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
+          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={2}/>}</Suspense>
+          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
+          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={2}/>}</Suspense>
+          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
         </StyledProjectsGrid>
       </Container>
     </StyledProjects>
