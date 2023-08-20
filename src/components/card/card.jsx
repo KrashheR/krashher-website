@@ -23,20 +23,24 @@ function Card ({ data, animationOrder }) {
   }
 
   return (
-    <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-      <StyledImage src={process.env.PUBLIC_URL + data.image} alt={data.title + " скриншот"}/>
-      <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ data.title }</Title>
-      <Description>
-        {data.description}
-      </Description>
-      <StyledStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-        <Stack stackList={data.stack} cardStack={true}/>
-      </StyledStack>
-      <StyledCardLinksContainer>
-        <Link linkType={LinkType.GITHUB} href={data.github} target="_blank">Перейти на GitHub</Link>
-        <Link linkType={LinkType.DEMO} href={data.demo} target="_blank">Посмотреть Demo</Link>
-      </StyledCardLinksContainer>
-    </StyledCard>
+    <>
+      {data.map((item, index) => (
+        <StyledCard as={motion.div} variants={showingAnimation} initial="hidden" whileInView="visible" viewport={{ once: true }} key={index}>
+          <StyledImage src={process.env.PUBLIC_URL + item.image} alt={item.title + " скриншот"}/>
+          <Title level={TitleLevel.H3} color={TitleColor.PRIMARY} type={TitleType.CARD}>{ item.title }</Title>
+          <Description>
+            {item.description}
+          </Description>
+          <StyledStack as={motion.div} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            <Stack stackList={item.stack} cardStack={true}/>
+          </StyledStack>
+          <StyledCardLinksContainer>
+            <Link linkType={LinkType.GITHUB} href={item.github} target="_blank">Перейти на GitHub</Link>
+            <Link linkType={LinkType.DEMO} href={item.demo} target="_blank">Посмотреть Demo</Link>
+          </StyledCardLinksContainer>
+        </StyledCard>
+      ))};
+    </>
   );
 }
 

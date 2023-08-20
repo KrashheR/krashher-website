@@ -7,18 +7,14 @@ import { useInView } from "react-intersection-observer";
 const Card = lazy(() => import("../card/card"));
 
 function Projects () {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({triggerOnce: true});
 
   return (
     <StyledProjects id="projects">
       <Container>
         <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ ПРОЕКТЫ</Title>
         <StyledProjectsGrid ref={ref}>
-          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
-          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={2}/>}</Suspense>
-          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
-          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={2}/>}</Suspense>
-          <Suspense fallback={<div />}>{inView && <Card data={Data[0]} animationOrder={1}/>}</Suspense>
+          <Suspense fallback={<div />}>{inView && <Card data={Data} animationOrder={1}/>}</Suspense>
         </StyledProjectsGrid>
       </Container>
     </StyledProjects>

@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const EducationPlaces = lazy(() => import("../educationPlaces/educationPlaces"));
 
 function Education() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({triggerOnce: true});
 
   return(
     <Container>

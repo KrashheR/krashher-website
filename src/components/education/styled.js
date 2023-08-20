@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledEducation = styled.section`
-  margin: 100px 0;
-
+  padding: 100px 0;
 `;
 
 export const StyledEducationGrid = styled.div`

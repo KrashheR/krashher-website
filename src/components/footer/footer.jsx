@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const Contacts= lazy(() => import("../contacts/contacts"));
 
 function Footer() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({triggerOnce: true});
 
   return(
     <StyledFooter ref={ref}>
