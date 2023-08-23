@@ -6,15 +6,23 @@ import Container from "../../containers/container/container";
 import { useInView } from "react-intersection-observer";
 const Card = lazy(() => import("../../ui/card/card"));
 
-function Projects () {
-  const { ref, inView } = useInView({triggerOnce: true});
+function Projects() {
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <StyledProjects id="projects">
       <Container>
-        <Title level={TitleLevel.H2} color={TitleColor.PRIMARY} type={TitleType.SECTION}>МОИ ПРОЕКТЫ</Title>
+        <Title
+          level={TitleLevel.H2}
+          color={TitleColor.PRIMARY}
+          type={TitleType.SECTION}
+        >
+          МОИ ПРОЕКТЫ
+        </Title>
         <StyledProjectsGrid ref={ref}>
-          <Suspense fallback={<div />}>{inView && <Card data={Data} />}</Suspense>
+          <Suspense fallback={<div />}>
+            {inView && <Card data={Data} />}
+          </Suspense>
         </StyledProjectsGrid>
       </Container>
     </StyledProjects>

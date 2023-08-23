@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledMyPhoto = styled.img`
   position: absolute;
@@ -12,16 +12,16 @@ export const StyledMyPhoto = styled.img`
 
 export const StyledMyPhotoContainer = styled.div`
   position: relative;
-	z-index: 0;
-	width: 350px;
-	height: 350px;
-	border-radius: 50%;
-	overflow: hidden;
-	padding: 2rem;
+  z-index: 0;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 2rem;
   box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.3);
   transition: 0.4s ease;
 
-  &:hover{
+  &:hover {
     box-shadow: 0px 0px 14px 4px rgba(237, 247, 56, 0.6);
   }
 
@@ -55,8 +55,15 @@ export const StyledBorder = styled.div`
   height: 200%;
   background-color: #161a1f;
   background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#EDF738, #EDF738), linear-gradient(#161a1f, #161a1f), linear-gradient(#EDF738, #EDF738), linear-gradient(#161a1f, #161a1f);
+  background-size:
+    50% 50%,
+    50% 50%;
+  background-position:
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%;
+  background-image: linear-gradient(#edf738, #edf738),
+    linear-gradient(#161a1f, #161a1f), linear-gradient(#edf738, #edf738),
+    linear-gradient(#161a1f, #161a1f);
 `;
-

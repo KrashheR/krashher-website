@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledContacts = styled.section`
   display: flex;
@@ -12,4 +12,3 @@ export const StyledContactsContainer = styled.div`
   justify-content: center;
   gap: 20px;
 `;
-

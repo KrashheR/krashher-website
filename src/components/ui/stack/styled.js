@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledStackImg = styled.img`
   height: 60px;
   width: 60px;
   justify-self: center;
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     max-height: 40px;
     max-width: 40px;
   }
@@ -21,8 +21,7 @@ export const StyledStackSpan = styled.span`
   font-size: 18px;
   font-weight: 300;
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: 16px;
   }
 `;
-

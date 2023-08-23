@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledProjects = styled.section`
   padding: 100px 0;
@@ -10,14 +10,14 @@ export const StyledProjectsGrid = styled.div`
   margin-top: 50px;
   grid-gap: 80px;
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     align-items: normal;
   }
 `;

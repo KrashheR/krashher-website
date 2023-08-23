@@ -13,10 +13,14 @@ export const StyledTitle = styled.h1`
     return padding;
   }};
   color: ${(props) => {
-    return props.$color === TitleColor.GRAY ? props.theme.colors.textGray : props.theme.colors.textPrimary;
+    return props.$color === TitleColor.GRAY
+      ? props.theme.colors.textGray
+      : props.theme.colors.textPrimary;
   }};
   font-size: ${(props) => {
-    return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitle : props.theme.fontSizes.cardTitle;
+    return props.$titleType === TitleType.SECTION
+      ? props.theme.fontSizes.sectionTitle
+      : props.theme.fontSizes.cardTitle;
   }};
   font-weight: ${(props) => {
     return props.$titleType === TitleType.SECTION ? 700 : 400;
@@ -25,7 +29,7 @@ export const StyledTitle = styled.h1`
     return props.$titleType === TitleType.SECTION ? "left" : "center";
   }};
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     font-size: ${(props) => {
       if (props.$titleType === TitleType.SOFTSKILLS) {
         return props.theme.fontSizes.softSkillsTitleTablet;
@@ -33,18 +37,19 @@ export const StyledTitle = styled.h1`
     }};
   }
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: ${(props) => {
-      return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobile : props.theme.fontSizes.cardTitleMobile
+      return props.$titleType === TitleType.SECTION
+        ? props.theme.fontSizes.sectionTitleMobile
+        : props.theme.fontSizes.cardTitleMobile;
     }};
   }
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
     font-size: ${(props) => {
-      return props.$titleType === TitleType.SECTION ? props.theme.fontSizes.sectionTitleMobileSmall : props.theme.fontSizes.cardTitleMobileSmall
+      return props.$titleType === TitleType.SECTION
+        ? props.theme.fontSizes.sectionTitleMobileSmall
+        : props.theme.fontSizes.cardTitleMobileSmall;
     }};
   }
-
 `;
-
-

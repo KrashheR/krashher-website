@@ -1,27 +1,28 @@
-import styled from "styled-components";
-import { LinkType } from "./link";
+import styled from 'styled-components';
+import { LinkType } from './link';
 
 export const StyledLink = styled.a`
   position: relative;
   color: ${(props) => {
     let color = props.theme.colors.textPrimary;
-    if(props.$linkType === LinkType.GITHUB){
+    if (props.$linkType === LinkType.GITHUB) {
       color = props.theme.colors.textGray;
-    } else if (props.$linkType === LinkType.TELEGRAM){
+    } else if (props.$linkType === LinkType.TELEGRAM) {
       color = props.theme.colors.telegram;
     }
     return color;
   }};
   padding: 10px;
-  border: 2px solid ${(props) => {
-    let color = props.theme.colors.textPrimary;
-    if(props.$linkType === LinkType.GITHUB){
-      color = props.theme.colors.textGray;
-    } else if (props.$linkType === LinkType.TELEGRAM){
-      color = props.theme.colors.telegram;
-    }
-    return color;
-  }};
+  border: 2px solid
+    ${(props) => {
+      let color = props.theme.colors.textPrimary;
+      if (props.$linkType === LinkType.GITHUB) {
+        color = props.theme.colors.textGray;
+      } else if (props.$linkType === LinkType.TELEGRAM) {
+        color = props.theme.colors.telegram;
+      }
+      return color;
+    }};
   border-radius: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -41,16 +42,16 @@ export const StyledLink = styled.a`
     z-index: -10;
     background-color: ${(props) => {
       let color = props.theme.colors.textPrimary;
-      if(props.$linkType === LinkType.GITHUB){
+      if (props.$linkType === LinkType.GITHUB) {
         color = props.theme.colors.textGray;
-      } else if (props.$linkType === LinkType.TELEGRAM){
+      } else if (props.$linkType === LinkType.TELEGRAM) {
         color = props.theme.colors.telegram;
       }
       return color;
     }};
   }
 
-  &:hover{
+  &:hover {
     color: ${(props) => props.theme.colors.bg};
     &:after {
       animation: fillLink 0.7s forwards;
@@ -77,11 +78,11 @@ export const StyledLink = styled.a`
     }
   }
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobile}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: 14px;
   }
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.mobileSmall}){
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
     font-size: 12px;
   }
 `;

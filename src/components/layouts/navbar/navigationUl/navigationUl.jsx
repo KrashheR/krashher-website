@@ -1,17 +1,33 @@
-import React from "react";
-import { StyledUl, StyledLi, StyledLink } from "./styled";
+import React from 'react';
+import { StyledUl, StyledLi, StyledLink } from './styled';
 
-function NavigationUl ({ toggle, setToggle }) {
-  const handleToggle = () => {
-    setToggle(!toggle);
+function NavigationUl({ isToggle, setToggle }) {
+  const handleToggleChange = () => {
+    setToggle(!isToggle);
   };
 
   return (
-    <StyledUl $toggle={toggle}>
-      <StyledLi><StyledLink href="#skills" onClick={handleToggle}>Навыки</StyledLink></StyledLi>
-      <StyledLi><StyledLink href="#education" onClick={handleToggle}>Образование</StyledLink></StyledLi>
-      <StyledLi><StyledLink href="#projects" onClick={handleToggle}>Проекты</StyledLink></StyledLi>
-      <StyledLi><StyledLink href="#contacts" onClick={handleToggle}>Контакты</StyledLink></StyledLi>
+    <StyledUl $isToggle={isToggle}>
+      <StyledLi>
+        <StyledLink href="#skills" onClick={handleToggleChange}>
+          Навыки
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink href="#education" onClick={handleToggleChange}>
+          Образование
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink href="#projects" onClick={handleToggleChange}>
+          Проекты
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
+        <StyledLink href="#contacts" onClick={handleToggleChange}>
+          Контакты
+        </StyledLink>
+      </StyledLi>
     </StyledUl>
   );
 }

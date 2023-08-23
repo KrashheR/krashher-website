@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -13,18 +13,17 @@ export const StyledToggler = styled.button`
   height: 40px;
   margin-left: 25px;
   border-radius: 50%;
-  border: 2px solid ${props => props.theme.colors.primary};
+  border: 2px solid ${(props) => props.theme.colors.primary};
   background: none;
   transition: 0.3s ease;
   cursor: pointer;
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     margin-left: 10px;
   }
 
-  @media(max-width: ${(props) => props.theme.deviceSizes.tablet}) {
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     display: flex;
     z-index: 2;
   }
-
 `;

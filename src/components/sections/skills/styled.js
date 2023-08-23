@@ -1,8 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledSkills = styled.section`
-
-`;
+export const StyledSkills = styled.section``;
 
 export const StyledSkillsStack = styled.div`
   display: grid;
@@ -34,7 +32,6 @@ export const StyledSkillsSubtitle = styled.h3`
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
     font-size: 20px;
   }
-
 `;
 
 export const StyledSoftSkillsContainer = styled.div`

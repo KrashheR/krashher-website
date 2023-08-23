@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledUl = styled.ul`
   display: flex;
@@ -7,8 +7,6 @@ export const StyledUl = styled.ul`
   list-style-type: none;
   transform-style: preserve-3d;
   transition: 0.7s ease;
-
-
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     gap: 10px;
@@ -26,7 +24,9 @@ export const StyledUl = styled.ul`
     opacity: 1;
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
-      return props.$toggle === true ? "translate3d(0px, 0px, 0px)" : "translate3d(0px, -100%, 0px)";
+      return props.$isToggle === true
+        ? 'translate3d(0px, 0px, 0px)'
+        : 'translate3d(0px, -100%, 0px)';
     }};
   }
 `;
@@ -52,7 +52,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.colors.textPrimary};
 
-  &:hover{
+  &:hover {
     &:after {
       width: 100%;
       z-index: -10;

@@ -19,41 +19,43 @@ import wordpressIcon from "../../../assets/images/wordpress.svg";
 import styledComponentsIcon from "../../../assets/images/styled-components.svg";
 
 function Stack({ stackList, cardStack }) {
-  const iconsList = {"html":htmlIcon,
-                    "css": cssIcon,
-                    "sass": sassIcon,
-                    "scss": scssIcon,
-                    "js": jsIcon,
-                    "gulp": gulpIcon,
-                    "bem": bemIcon,
-                    "git": gitIcon,
-                    "react": reactIcon,
-                    "redux": reduxIcon,
-                    "ts": tsIcon,
-                    "vscode": vscodeIcon,
-                    "webpack": webpackIcon,
-                    "figma": figmaIcon,
-                    "styled-components": styledComponentsIcon,
-                    "wordpress": wordpressIcon,
-                    };
+  const iconsList = {
+    html: htmlIcon,
+    css: cssIcon,
+    sass: sassIcon,
+    scss: scssIcon,
+    js: jsIcon,
+    gulp: gulpIcon,
+    bem: bemIcon,
+    git: gitIcon,
+    react: reactIcon,
+    redux: reduxIcon,
+    ts: tsIcon,
+    vscode: vscodeIcon,
+    webpack: webpackIcon,
+    figma: figmaIcon,
+    styledComponents: styledComponentsIcon,
+    wordpress: wordpressIcon,
+  };
 
-  const namesList = {"html":"HTML",
-                    "css": "CSS",
-                    "sass": "SASS",
-                    "scss": "SCSS",
-                    "js": "JavaScript",
-                    "gulp": "Gulp",
-                    "bem": "BEM",
-                    "git": "Git",
-                    "react": "React",
-                    "redux": "Redux",
-                    "ts": "TypeScript",
-                    "vscode": "VSCode",
-                    "webpack": "Webpack",
-                    "figma": "Figma",
-                    "styled-components": "Styled-Components",
-                    "wordpress": "WordPress",
-                    };
+  const namesList = {
+    html: "HTML",
+    css: "CSS",
+    sass: "SASS",
+    scss: "SCSS",
+    js: "JavaScript",
+    gulp: "Gulp",
+    bem: "BEM",
+    git: "Git",
+    react: "React",
+    redux: "Redux",
+    ts: "TypeScript",
+    vscode: "VSCode",
+    webpack: "Webpack",
+    figma: "Figma",
+    styledComponents: "Styled-Components",
+    wordpress: "WordPress",
+  };
 
   const stackAnimation = {
     hidden: {
@@ -61,27 +63,40 @@ function Stack({ stackList, cardStack }) {
       opacity: 0,
       scale: 1.5,
     },
-    visible: custom => ({
+    visible: (custom) => ({
       y: 0,
       opacity: 1,
       scale: 1,
-      transition: {delay: custom * 0.2, duration: 0.45},
-  })
-  }
+      transition: { delay: custom * 0.2, duration: 0.45 },
+    }),
+  };
 
   if (cardStack) {
-    return(
+    return (
       <>
-        {stackList.map((item, index) =>(
-          <StyledStackImg as={motion.img} custom={index+1} variants={stackAnimation} src={iconsList[item]} alt={item} loading="lazy" key={index} />
+        {stackList.map((item, index) => (
+          <StyledStackImg
+            as={motion.img}
+            custom={index + 1}
+            variants={stackAnimation}
+            src={iconsList[item]}
+            alt={item}
+            key={index}
+          />
         ))}
       </>
     );
   } else {
-    return(
+    return (
       <>
-        {stackList.map((item, index) =>(
-          <StyledStackSpan as={motion.span} custom={index+1} key={index} variants={stackAnimation} viewport={{ once: true }}>
+        {stackList.map((item, index) => (
+          <StyledStackSpan
+            as={motion.span}
+            custom={index + 1}
+            key={index}
+            variants={stackAnimation}
+            viewport={{ once: true }}
+          >
             <StyledStackImg src={iconsList[item]} alt={"логотип " + item} />
             <p>{namesList[item]}</p>
           </StyledStackSpan>
@@ -89,8 +104,6 @@ function Stack({ stackList, cardStack }) {
       </>
     );
   }
-
-
 }
 
 export default Stack;
