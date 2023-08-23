@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -51,8 +51,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: ${props => props.theme.colors.bg};
+    background-color: ${(props) => props.theme.colors.bg};
   }
-`
+`;
 
 export default GlobalStyles;
