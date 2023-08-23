@@ -85,9 +85,6 @@ export const StyledLink = styled.a`
       width: 0%;
       height: 1px;
     }
-    10% {
-      width: 5%;
-    }
     100% {
       width: 100%;
       background: ${(props) => props.theme.colors.textPrimary};

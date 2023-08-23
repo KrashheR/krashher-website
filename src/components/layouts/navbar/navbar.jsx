@@ -5,13 +5,13 @@ import NavigationUl from "./navigationUl/navigationUl";
 
 
 function Navbar () {
-  const [openHamburger, setHamburger] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <StyledNav>
-      <NavigationUl toggle={openHamburger} onClick={() => setHamburger(!openHamburger)}/>
-      <StyledToggler type="button" aria-label="Открыть меню навигации" onClick={() => setHamburger(!openHamburger)}>
-        <Hamburger toggle={openHamburger} />
+      <NavigationUl toggle={toggle} setToggle={setToggle} />
+      <StyledToggler type="button" aria-label="Открыть меню навигации" onClick={() => setToggle(!toggle)}>
+        <Hamburger toggle={toggle} />
       </StyledToggler>
   </StyledNav>
   )
