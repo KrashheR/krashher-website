@@ -1,12 +1,12 @@
 import React from "react";
-import GlobalStyles from "./theme/globalStyles";
-import Header from "./components/header/header";
 import { ThemeProvider } from "styled-components";
-import { DefaultTheme } from "./theme/defaultTheme";
+import GlobalStyles from "./assets/theme/globalStyles";
+import { DefaultTheme } from "./assets/theme/defaultTheme";
 
-import Main from "./components/main/main";
-import Footer from "./components/footer/footer";
-import Home from "./components/home/home";
+import Header from "./components/layouts/header/header";
+import Main from "./components/layouts/main/main";
+import Footer from "./components/layouts/footer/footer";
+import Home from "./components/sections/home/home";
 
 function App() {
   return (
