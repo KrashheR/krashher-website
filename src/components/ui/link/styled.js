@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { LinkType } from './link';
+import styled from "styled-components";
+import { LinkType } from "./link";
 
 export const StyledLink = styled.a`
   position: relative;
@@ -31,7 +31,7 @@ export const StyledLink = styled.a`
   text-align: center;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     height: 1px;
     left: 0;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledEducation = styled.section`
   padding-top: 80px;
@@ -7,9 +7,9 @@ export const StyledEducation = styled.section`
 export const StyledEducationGrid = styled.div`
   display: grid;
   grid-template-areas:
-    'universityBac . htmlacademy'
-    'andOther . learnjs'
-    'universityMag . react';
+    "universityBac . htmlacademy"
+    "andOther . learnjs"
+    "universityMag . react";
   grid-gap: 40px;
   margin-top: 50px;
 

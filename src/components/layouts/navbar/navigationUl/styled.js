@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledUl = styled.ul`
   display: flex;
@@ -25,8 +25,8 @@ export const StyledUl = styled.ul`
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
       return props.$isToggle === true
-        ? 'translate3d(0px, 0px, 0px)'
-        : 'translate3d(0px, -100%, 0px)';
+        ? "translate3d(0px, 0px, 0px)"
+        : "translate3d(0px, -100%, 0px)";
     }};
   }
 `;
@@ -75,7 +75,7 @@ export const StyledLink = styled.a`
     right: 0;
     margin: auto;
     width: 0%;
-    content: '';
+    content: "";
     background: ${(props) => props.theme.colors.textPrimary};
     height: 1px;
   }

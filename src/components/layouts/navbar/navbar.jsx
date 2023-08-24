@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { StyledToggler, StyledNav } from './styled';
-import Hamburger from '../../ui/hamburger/hamburger';
-import NavigationUl from './navigationUl/navigationUl';
+import React, { useState } from "react";
+import { StyledToggler, StyledNav } from "./styled";
+import Hamburger from "../../ui/hamburger/hamburger";
+import NavigationUl from "./navigationUl/navigationUl";
 
 function Navbar() {
   const [isToggle, setToggle] = useState(false);

@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyledUl, StyledLi, StyledLink } from './styled';
+import React from "react";
+import { StyledUl, StyledLi, StyledLink } from "./styled";
 
 function NavigationUl({ isToggle, setToggle }) {
   const handleToggleChange = () => {

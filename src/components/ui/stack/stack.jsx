@@ -95,7 +95,6 @@ function Stack({ stackList, cardStack }) {
             custom={index + 1}
             key={index}
             variants={stackAnimation}
-            viewport={{ once: true }}
           >
             <StyledStackImg src={iconsList[item]} alt={"логотип " + item} />
             <p>{namesList[item]}</p>
