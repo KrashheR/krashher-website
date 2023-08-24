@@ -4,6 +4,7 @@ import {
   StyledImage,
   StyledCardLinksContainer,
   StyledStack,
+  StyledPicture,
 } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../title/title";
 import Stack from "../stack/stack";
@@ -36,10 +37,10 @@ function Card({ data }) {
           viewport={{ once: true }}
           key={index}
         >
-          <StyledImage
-            src={process.env.PUBLIC_URL + item.image}
-            alt={item.title + " скриншот"}
-          />
+          <StyledPicture>
+            <source srcSet={process.env.PUBLIC_URL + item.imageMobile} media="(max-width: 576px)"/>
+            <StyledImage src={process.env.PUBLIC_URL + item.image} alt={item.title + " скриншот"} />
+          </StyledPicture>
           <Title
             level={TitleLevel.H3}
             color={TitleColor.PRIMARY}

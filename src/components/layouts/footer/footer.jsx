@@ -1,16 +1,13 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import Container from "../../containers/container/container";
 import { StyledFooter } from "./styled";
-import { useInView } from "react-intersection-observer";
-const Contacts = lazy(() => import("../../sections/contacts/contacts"));
+import Contacts from "../../sections/contacts/contacts";
 
 function Footer() {
-  const { ref, inView } = useInView({ triggerOnce: true });
-
   return (
-    <StyledFooter ref={ref}>
+    <StyledFooter>
       <Container>
-        <Suspense fallback={<div />}>{inView && <Contacts />}</Suspense>
+        <Contacts />
       </Container>
     </StyledFooter>
   );

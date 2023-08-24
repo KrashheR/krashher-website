@@ -18,13 +18,15 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledImage = styled.img`
-  max-width: 540px;
-  max-height: 500px;
-  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: auto;
+  width:100%;
+`;
 
-  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    max-width: 500px;
-  }
+export const StyledPicture = styled.picture`
+  display: flex;
+  height: 100%;
+  width: 100%;
 `;
 
 export const StyledCardLinksContainer = styled.div`
