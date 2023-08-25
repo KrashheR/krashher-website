@@ -16,7 +16,7 @@ export const StyledUl = styled.ul`
     position: absolute;
     flex-direction: column;
     justify-content: center;
-    height: -webkit-fill-available;
+    height: ${window.innerHeight}px;
     width: 100%;
     top: 0;
     right: 0;

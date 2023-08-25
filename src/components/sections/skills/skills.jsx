@@ -20,11 +20,12 @@ function Skills() {
     "ts",
     "react",
     "redux",
+    "php",
     "wordpress",
     "gulp",
     "webpack",
   ];
-  const otherStaff = ["vscode", "git", "figma", "styledComponents", "bem"];
+  const otherStaff = ["vscode", "git", "figma", "photoshop", "styledComponents", "bem"];
   const softSkillsList = [
     ["Коммуникабельность", "Легко нахожу общий язык с окружающими меня людьми"],
     ["Умение работать в команде", "Имею опыт командной разработки проектов"],

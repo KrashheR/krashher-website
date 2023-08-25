@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledStackImg = styled.img`
   height: 60px;
-  width: 60px;
+  max-width: 60px;
   justify-self: center;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {

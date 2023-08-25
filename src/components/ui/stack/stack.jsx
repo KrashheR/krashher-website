@@ -17,6 +17,8 @@ import webpackIcon from "../../../assets/images/webpack.svg";
 import figmaIcon from "../../../assets/images/figma.svg";
 import wordpressIcon from "../../../assets/images/wordpress.svg";
 import styledComponentsIcon from "../../../assets/images/styled-components.svg";
+import phpIcon from "../../../assets/images/php.svg";
+import photoshopIcon from "../../../assets/images/photoshop.svg";
 
 function Stack({ stackList, cardStack }) {
   const iconsList = {
@@ -36,6 +38,8 @@ function Stack({ stackList, cardStack }) {
     figma: figmaIcon,
     styledComponents: styledComponentsIcon,
     wordpress: wordpressIcon,
+    php: phpIcon,
+    photoshop: photoshopIcon,
   };
 
   const namesList = {
@@ -55,6 +59,8 @@ function Stack({ stackList, cardStack }) {
     figma: "Figma",
     styledComponents: "Styled-Components",
     wordpress: "WordPress",
+    php: "PHP",
+    photoshop: "Photoshop",
   };
 
   const stackAnimation = {

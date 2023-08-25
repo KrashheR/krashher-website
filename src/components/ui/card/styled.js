@@ -19,14 +19,19 @@ export const StyledCard = styled.div`
 
 export const StyledImage = styled.img`
   object-fit: cover;
-  height: auto;
-  width:100%;
+  height: 100%;
+  width: 100%;
 `;
 
 export const StyledPicture = styled.picture`
   display: flex;
-  height: 100%;
   width: 100%;
+  height: 340px;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    max-height: 320px;
+    height: auto;
+  }
 `;
 
 export const StyledCardLinksContainer = styled.div`
@@ -34,12 +39,16 @@ export const StyledCardLinksContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  margin-top: auto;
 `;
 
 export const StyledStack = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
   margin: 30px 0;
+  gap: 5px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     margin: 20px 0;

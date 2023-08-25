@@ -1,21 +1,31 @@
 [
   {
     "id":0,
-    "image": "/projects/oculus.webp",
-    "imageMobile": "/projects/oculus-mobile.webp",
-    "title": "Oculus - website",
-    "description": "Cайт разработан в соответствии с методологией БЭМ. В его основе HTML, SCSS(SASS), JavaScript. Сборка проекта производилась с помощью GULP 4. Была произведена оптимизация скорости работы сайта путём минимизации css и js файлов, преобразования изображений в webp формат и их сжатия.",
-    "stack": ["html", "sass", "js", "gulp", "bem"],
-    "github": "https://github.com/KrashheR/oculus-site",
-    "demo": "https://krashher.github.io/oculus-site/"
+    "image": "/projects/price-predictor.webp",
+    "imageMobile": "/projects/price-predictor-mobile.webp",
+    "title": "AI stock price predictor - React",
+    "description": "Данное веб-приложение было разработано на React. Его цель демонстрация результатов прогнозирования цен на активы моей модели машинного обучения. Интеграция с бэкендом выполнена через API на PHP. Приложение включает в себя интуитивный поиск с фильтрацией данных в таблице, их сортировку по столбцам, а также выделение ключевых показателей в отдельных карточках.",
+    "stack": ["html", "js", "react", "styledComponents", "php"],
+    "github": "https://github.com/KrashheR/stock-prices-predictor-site",
+    "demo": "https://krashher.github.io/stock-prices-predictor-site/"
   },
   {
-    "id":0,
+    "id":1,
     "image": "/projects/crypto-wp.webp",
     "imageMobile": "/projects/crypto-wp-mobile.webp",
     "title": "Crypto - WordPress",
-    "description": "Cайт разработан в соответствии с методологией БЭМ. В его основе HTML, SCSS(SASS), JavaScript. Сборка проекта производилась с помощью GULP 4. Была произведена оптимизация скорости работы сайта путём минимизации css и js файлов, преобразования изображений в webp формат и их сжатия.",
-    "stack": ["html", "sass", "js", "wordpress", "bem"],
+    "description": "Проект реализован на базе HTML и CSS по методологии БЭМ и интегрирован с WordPress через PHP. Дизайн сайта был предварительно разработан мной в Figma. Проект адаптирован под планшеты и мобильные устройства. Также была проведена работа над улучшением производительности сайта.",
+    "stack": ["html", "css", "js", "php", "wordpress", "bem", "figma"],
+    "github": "https://github.com/KrashheR/crypto-news-wp",
+    "demo": "https://krashher-wp.space/"
+  },
+  {
+    "id":2,
+    "image": "/projects/oculus.webp",
+    "imageMobile": "/projects/oculus-mobile.webp",
+    "title": "Oculus - website",
+    "description": "Проект разработан с использованием методологии БЭМ. В его основе: HTML5, SCSS(SASS) и чистый JavaScript. Сборка и оптимизация реализованы через GULP 4, включая минимизацию CSS и JS, а также конвертацию изображений в формат webp и их сжатие для улучшения производительности сайта.",
+    "stack": ["html", "sass", "js", "gulp", "bem"],
     "github": "https://github.com/KrashheR/oculus-site",
     "demo": "https://krashher.github.io/oculus-site/"
   }
