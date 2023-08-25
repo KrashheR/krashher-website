@@ -4,7 +4,7 @@ export const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   width: 100%;
-  height: -webkit-fill-avaiable;
+  height: 58px;
   justify-content: space-between;
 `;
 

@@ -52,4 +52,8 @@ export const StyledSoftSkillsContainer = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    grid-gap: 20px;
+  }
 `;

@@ -16,4 +16,5 @@ export const StyledSoftSkill = styled.span`
     padding: 14px;
     width: -webkit-fill-available;
   }
+
 `;

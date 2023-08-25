@@ -45,9 +45,12 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  html {
-    scroll-behavior: smooth;
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
+
 
   body {
     font-family: 'Montserrat', sans-serif;

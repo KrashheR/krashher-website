@@ -29,7 +29,6 @@ export const StyledPicture = styled.picture`
   height: 300px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    max-height: 300px;
     height: auto;
   }
 `;
@@ -43,15 +42,22 @@ export const StyledCardLinksContainer = styled.div`
 `;
 
 export const StyledStack = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   align-items: center;
   height: 100%;
   margin: 30px 0;
-  gap: 5px;
+  padding: 0 10px;
+  gap: 2px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     margin: 20px 0;
-    gap: 3px;
   }
 `;

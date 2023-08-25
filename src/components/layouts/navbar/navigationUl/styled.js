@@ -21,13 +21,14 @@ export const StyledUl = styled.ul`
     top: 0;
     right: 0;
     z-index: 1;
-    opacity: 1;
+    opacity: ${(props) => (props.$isToggle ? 1 : 0)};
     background-color: ${(props) => props.theme.colors.bg};
     transform: ${(props) => {
       return props.$isToggle === true
         ? "translate3d(0px, 0px, 0px)"
         : "translate3d(0px, -100%, 0px)";
     }};
+    transition: all 0.5s ease-in-out;
   }
 `;
 
@@ -54,7 +55,7 @@ export const StyledLink = styled.a`
 
   &:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     height: 100%;
     transition: 0.4s all ease;
@@ -75,6 +76,4 @@ export const StyledLink = styled.a`
       display: none;
     }
   }
-
-
 `;

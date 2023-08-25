@@ -5,7 +5,7 @@ import Greetings from "./greetings/greetings";
 function Home() {
   return (
     <StyledHome>
-      <Greetings text={"Привет, <br/> Я Никита,<br/> Веб-разработчик"} />
+      <Greetings letter={"Привет, я Никита, веб-разработчик"}></Greetings>
     </StyledHome>
   );
 }

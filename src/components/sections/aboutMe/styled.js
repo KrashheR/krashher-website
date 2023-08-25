@@ -46,6 +46,10 @@ export const StyledAboutMeText = styled.p`
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: 20px;
   }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    font-size: 14px;
+  }
 `;
 
 export const StyledAboutMeLink = styled.a`

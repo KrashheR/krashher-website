@@ -5,9 +5,24 @@ export const StyledStackImg = styled.img`
   max-width: 60px;
   justify-self: center;
 
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    max-height: 55px;
+    max-width: 55px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
+    max-height: 50px;
+    max-width: 50px;
+  }
+
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     max-height: 40px;
     max-width: 40px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    max-height: 30px;
+    max-width: 30px;
   }
 `;
 
