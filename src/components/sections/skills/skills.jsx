@@ -8,7 +8,6 @@ import {
 import Title, { TitleColor, TitleLevel, TitleType } from "../../ui/title/title";
 import Stack from "../../ui/stack/stack";
 import SoftSkills from "./softSkills/softSkills";
-import Container from "../../containers/container/container";
 import { motion } from "framer-motion";
 
 function Skills() {
@@ -25,12 +24,22 @@ function Skills() {
     "gulp",
     "webpack",
   ];
-  const otherStaff = ["vscode", "git", "figma", "photoshop", "styledComponents", "bem"];
+  const otherStaff = [
+    "vscode",
+    "git",
+    "figma",
+    "photoshop",
+    "styledComponents",
+    "bem",
+  ];
   const softSkillsList = [
     ["Коммуникабельность", "Легко нахожу общий язык с окружающими меня людьми"],
     ["Умение работать в команде", "Имею опыт командной разработки проектов"],
     ["Любовь к учёбе", "Имею тягу к новым знаниям, в особенности в сфере IT"],
-    ["Внимание к деталям", "Готовность и умение делать сайт Pixel Perfect всегда со мной"],
+    [
+      "Внимание к деталям",
+      "Готовность и умение делать сайт Pixel Perfect всегда со мной",
+    ],
     ["Креативность", "Могу подойти к решению задачи с творческой стороны"],
     ["Ответственность", "Имею опыт выполнения поставленных задач в срок"],
   ];
@@ -54,69 +63,67 @@ function Skills() {
 
   return (
     <StyledSkills id="skills">
-      <Container>
-        <Title
-          level={TitleLevel.H2}
-          color={TitleColor.PRIMARY}
-          type={TitleType.SECTION}
-        >
-          МОИ НАВЫКИ
-        </Title>
-        <StyledSkillsSubtitle
-          as={motion.h3}
-          variants={titleAnimation}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={1}
-        >
-          МОЙ СТЭК
-        </StyledSkillsSubtitle>
-        <StyledSkillsStack
-          as={motion.div}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <Stack stackList={myStack} cardStack={false} />
-        </StyledSkillsStack>
-        <StyledSkillsSubtitle
-          as={motion.h3}
-          variants={titleAnimation}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={2}
-        >
-          ИНСТРУМЕНТЫ И ПРОЧЕЕ
-        </StyledSkillsSubtitle>
-        <StyledSkillsStack
-          as={motion.div}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <Stack stackList={otherStaff} cardStack={false} />
-        </StyledSkillsStack>
-        <StyledSkillsSubtitle
-          as={motion.h3}
-          variants={titleAnimation}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          custom={3}
-        >
-          SOFT-СКИЛЛЫ
-        </StyledSkillsSubtitle>
-        <StyledSoftSkillsContainer
-          as={motion.div}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <SoftSkills softSkillsList={softSkillsList} />
-        </StyledSoftSkillsContainer>
-      </Container>
+      <Title
+        level={TitleLevel.H2}
+        color={TitleColor.PRIMARY}
+        type={TitleType.SECTION}
+      >
+        МОИ НАВЫКИ
+      </Title>
+      <StyledSkillsSubtitle
+        as={motion.h3}
+        variants={titleAnimation}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={1}
+      >
+        МОЙ СТЭК
+      </StyledSkillsSubtitle>
+      <StyledSkillsStack
+        as={motion.div}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Stack stackList={myStack} cardStack={false} />
+      </StyledSkillsStack>
+      <StyledSkillsSubtitle
+        as={motion.h3}
+        variants={titleAnimation}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={2}
+      >
+        ИНСТРУМЕНТЫ И ПРОЧЕЕ
+      </StyledSkillsSubtitle>
+      <StyledSkillsStack
+        as={motion.div}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <Stack stackList={otherStaff} cardStack={false} />
+      </StyledSkillsStack>
+      <StyledSkillsSubtitle
+        as={motion.h3}
+        variants={titleAnimation}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        custom={3}
+      >
+        SOFT-СКИЛЛЫ
+      </StyledSkillsSubtitle>
+      <StyledSoftSkillsContainer
+        as={motion.div}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <SoftSkills softSkillsList={softSkillsList} />
+      </StyledSoftSkillsContainer>
     </StyledSkills>
   );
 }

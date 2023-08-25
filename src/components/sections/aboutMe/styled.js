@@ -4,7 +4,7 @@ export const StyledAboutMe = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  height: calc(100vh - 60px);
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     flex-direction: column;
@@ -14,8 +14,12 @@ export const StyledAboutMe = styled.section`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    gap: 20px;
+    gap: 40px;
     padding-bottom: 10px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
+    gap: 10px;
   }
 `;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.section`
-  margin: 100px 0;
+  padding-top: 80px;
 `;
 
 export const StyledProjectsGrid = styled.div`

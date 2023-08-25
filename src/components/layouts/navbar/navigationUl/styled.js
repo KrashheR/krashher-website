@@ -52,13 +52,21 @@ export const StyledLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.colors.textPrimary};
 
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    transition: 0.4s all ease;
+    background: ${(props) => props.theme.colors.textPrimary};
+    left: 0;
+    z-index: -1;
+  }
+
   &:hover {
-    &:after {
+    color: ${(props) => props.theme.colors.bg};
+    &:before {
       width: 100%;
-      z-index: -10;
-      animation: strokeUl 1s forwards;
-      -webkit-animation: strokeUl 1s forwards;
-      -moz-animation: strokeUl 1s forwards;
     }
   }
 
@@ -68,26 +76,5 @@ export const StyledLink = styled.a`
     }
   }
 
-  &:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: "";
-    background: ${(props) => props.theme.colors.textPrimary};
-    height: 1px;
-  }
 
-  @-webkit-keyframes strokeUl {
-    0% {
-      width: 0%;
-      height: 1px;
-    }
-    100% {
-      width: 100%;
-      background: ${(props) => props.theme.colors.textPrimary};
-    }
-  }
 `;

@@ -26,10 +26,10 @@ export const StyledImage = styled.img`
 export const StyledPicture = styled.picture`
   display: flex;
   width: 100%;
-  height: 340px;
+  height: 300px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
-    max-height: 320px;
+    max-height: 300px;
     height: auto;
   }
 `;
@@ -52,5 +52,6 @@ export const StyledStack = styled.div`
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     margin: 20px 0;
+    gap: 3px;
   }
 `;

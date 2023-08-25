@@ -88,6 +88,7 @@ function Stack({ stackList, cardStack }) {
             src={iconsList[item]}
             alt={item}
             key={index}
+            $cardStack={cardStack}
           />
         ))}
       </>

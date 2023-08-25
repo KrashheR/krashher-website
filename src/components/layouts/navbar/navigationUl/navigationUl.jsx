@@ -9,6 +9,11 @@ function NavigationUl({ isToggle, setToggle }) {
   return (
     <StyledUl $isToggle={isToggle}>
       <StyledLi>
+        <StyledLink href="#aboutMe" onClick={handleToggleChange}>
+          Обо мне
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
         <StyledLink href="#skills" onClick={handleToggleChange}>
           Навыки
         </StyledLink>
