@@ -5,6 +5,10 @@ export const StyledContacts = styled.section`
   align-items: center;
   flex-direction: column;
   gap: 30px;
+
+  @media(max-width: ${(props) => props.theme.deviceSizes.tablet}) {
+    gap: 15px;
+  }
 `;
 
 export const StyledContactsContainer = styled.div`

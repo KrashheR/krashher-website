@@ -67,7 +67,6 @@ function Card({ data }) {
           </StyledCardLinksContainer>
         </StyledCard>
       ))}
-      ;
     </>
   );
 }
