@@ -52,13 +52,14 @@ export const StyledLink = styled.a`
   padding: 1px;
   text-decoration: none;
   color: ${(props) => props.theme.colors.textPrimary};
+  transition: color 0.4s ease;
 
   &:before {
     position: absolute;
     content: "";
     width: 0;
     height: 100%;
-    transition: 0.4s all ease;
+    transition: width 0.4s ease;
     background: ${(props) => props.theme.colors.textPrimary};
     left: 0;
     z-index: -1;
@@ -72,7 +73,7 @@ export const StyledLink = styled.a`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    &:after {
+    &:before {
       display: none;
     }
   }
