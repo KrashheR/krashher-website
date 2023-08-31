@@ -27,18 +27,20 @@ export const StyledLink = styled.a`
   font-weight: 400;
   text-decoration: none;
   font-size: 16px;
-  transition: 0.3s ease;
+  transition: color 0.6s ease-in;
   text-align: center;
 
   &:after {
     content: "";
     position: absolute;
-    height: 1px;
+    top: 0;
     left: 0;
     bottom: 0;
-    margin: auto;
     width: 0%;
-    border-radius: 15px;
+    height: 100%;
+    margin: auto;
+    opacity:0;
+    border-radius: 16px;
     z-index: -10;
     background-color: ${(props) => {
       let color = props.theme.colors.textPrimary;
@@ -49,32 +51,16 @@ export const StyledLink = styled.a`
       }
       return color;
     }};
+    transition: width 0.6s ease,  opacity 0.4s ease-in-out;
+
   }
 
   &:hover {
     color: ${(props) => props.theme.colors.bg};
+
     &:after {
-      animation: fillLink 0.7s forwards;
-      -webkit-animation: fillLink 0.7s forwards;
-      -moz-animation: fillLink 0.7s forwards;
-    }
-  }
-
-  @-webkit-keyframes fillLink {
-    0% {
-      background-color: ${(props) => props.theme.colors.bg};
-      width: 0%;
-      height: 100%;
-    }
-
-    10% {
-      background-color: ${(props) => props.theme.colors.bg};
-      width: 5%;
-      height: 100%;
-    }
-    100% {
       width: 100%;
-      height: 100%;
+      opacity:1;
     }
   }
 
