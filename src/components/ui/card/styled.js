@@ -26,7 +26,7 @@ export const StyledImage = styled.img`
 export const StyledPicture = styled.picture`
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 340px;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
     height: auto;
@@ -45,10 +45,16 @@ export const StyledStack = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   align-items: center;
+  place-items: center;
   height: 100%;
-  margin: 30px 0;
-  padding: 0 10px;
-  gap: 2px;
+  margin: 25px 0;
+  padding: 0 5px;
+  gap: 3px;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     gap: 0;
