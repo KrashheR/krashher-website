@@ -11,7 +11,7 @@ function AboutMe() {
       <StyledAboutMeText>
         <StyledKeyword>C детства увлекаюсь IT,</StyledKeyword> во время учёбы
         занимался геймдизайном и вёл{" "}
-        <StyledAboutMeLink href="https://www.youtube.com/@krashher2690">
+        <StyledAboutMeLink href="https://www.youtube.com/@krashher_ai">
           YouTube
         </StyledAboutMeLink>{" "}
         канал об этом. Сейчас нацелен на становлении{" "}
