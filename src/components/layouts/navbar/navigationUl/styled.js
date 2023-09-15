@@ -13,10 +13,12 @@ export const StyledUl = styled.ul`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
-    height: ${window.innerHeight}px;
+    align-items: center;
+    will-change: transform;
+    height: 100vh;
     width: 100%;
     top: 0;
     right: 0;
@@ -44,7 +46,11 @@ export const StyledLi = styled.li`
     text-align: center;
     margin-right: 0px;
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 24px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    font-size: 20px;
   }
 `;
 
