@@ -1,39 +1,57 @@
 import { createGlobalStyle } from "styled-components";
 
+import MontserratRegularWoff2 from "../fonts/Montserrat-Regular.woff2";
+import MontserratRegularWoff from "../fonts/Montserrat-Regular.woff";
+import MontserratRegularTtf from "../fonts/Montserrat-Regular.ttf";
+import MontserratRegularEot from "../fonts/Montserrat-Regular.eot";
+import MontserratRegularSvg from "../fonts/Montserrat-Regular.svg";
+
+import MontserratLightWoff2 from "../fonts/Montserrat-Light.woff2";
+import MontserratLightWoff from "../fonts/Montserrat-Light.woff";
+import MontserratLightTtf from "../fonts/Montserrat-Light.ttf";
+import MontserratLightEot from "../fonts/Montserrat-Light.eot";
+import MontserratLightSvg from "../fonts/Montserrat-Light.svg";
+
+import MontserratBoldWoff2 from "../fonts/Montserrat-Bold.woff2";
+import MontserratBoldWoff from "../fonts/Montserrat-Bold.woff";
+import MontserratBoldTtf from "../fonts/Montserrat-Bold.ttf";
+import MontserratBoldEot from "../fonts/Montserrat-Bold.eot";
+import MontserratBoldSvg from "../fonts/Montserrat-Bold.svg";
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: "Montserrat-Regular";
+    font-family: "Montserrat";
     src: local("Montserrat Regular"),
       local("Montserrat-Regular"),
-      url("../assets/fonts/Montserrat-Regular.woff2") format("woff2"),
-      url("../assets/fonts/Montserrat-Regular.woff") format("woff"),
-      url("../assets/fonts/Montserrat-Regular.ttf") format("ttf"),
-      url("../assets/fonts/Montserrat-Regular.eot") format("eot"),
-      url("../assets/fonts/Montserrat-Regular.svg") format("svg");
+      url(${MontserratRegularWoff2}) format("woff2"),
+      url(${MontserratRegularWoff}) format("woff"),
+      url(${MontserratRegularTtf}) format("truetype"),
+      url(${MontserratRegularEot}) format("embedded-opentype"),
+      url(${MontserratRegularSvg}) format("svg");
     font-weight: 400;
   };
 
   @font-face {
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
     src: local("Montserrat Light"),
       local("Montserrat-Light"),
-      url("../assets/fonts/Montserrat-Light.woff2") format("woff2"),
-      url("../assets/fonts/Montserrat-Light.woff") format("woff"),
-      url("../assets/fonts/Montserrat-Light.ttf") format("ttf"),
-      url("../assets/fonts/Montserrat-Light.eot") format("eot"),
-      url("../assets/fonts/Montserrat-Light.svg") format("svg");
+      url(${MontserratLightWoff2}) format("woff2"),
+      url(${MontserratLightWoff}) format("woff"),
+      url(${MontserratLightTtf}) format("truetype"),
+      url(${MontserratLightEot}) format("embedded-opentype"),
+      url(${MontserratLightSvg}) format("svg");
     font-weight: 300;
   };
 
   @font-face {
-    font-family: "Montserrat-Bold";
+    font-family: "Montserrat";
     src: local("Montserrat Bold"),
       local("Montserrat-Bold"),
-      url("../assets/fonts/Montserrat-Bold.woff2") format("woff2"),
-      url("../assets/fonts/Montserrat-Bold.woff") format("woff"),
-      url("../assets/fonts/Montserrat-Bold.ttf") format("ttf"),
-      url("../assets/fonts/Montserrat-Bold.eot") format("eot"),
-      url("../assets/fonts/Montserrat-Bold.svg") format("svg");
+      url(${MontserratBoldWoff2}) format("woff2"),
+      url(${MontserratBoldWoff}) format("woff"),
+      url(${MontserratBoldTtf}) format("truetype"),
+      url(${MontserratBoldEot}) format("embedded-opentype"),
+      url(${MontserratBoldSvg}) format("svg");
     font-weight: 700;
   };
 
