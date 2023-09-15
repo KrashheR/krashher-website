@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
       url(${MontserratRegularEot}) format("embedded-opentype"),
       url(${MontserratRegularSvg}) format("svg");
     font-weight: 400;
+    font-display: swap;
   };
 
   @font-face {
@@ -41,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
       url(${MontserratLightEot}) format("embedded-opentype"),
       url(${MontserratLightSvg}) format("svg");
     font-weight: 300;
+    font-display: swap;
   };
 
   @font-face {
@@ -53,6 +55,7 @@ const GlobalStyles = createGlobalStyle`
       url(${MontserratBoldEot}) format("embedded-opentype"),
       url(${MontserratBoldSvg}) format("svg");
     font-weight: 700;
+    font-display: swap;
   };
 
   *,
