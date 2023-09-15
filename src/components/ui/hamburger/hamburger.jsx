@@ -1,9 +1,9 @@
 import React from "react";
 
-function Hamburger({ toggle }) {
-  let topLine = toggle ? "M 12 27 L 28 13" : "M 12 13 L 28 13";
-  let midLine = toggle ? 0 : 1;
-  let bottomLine = toggle ? "M 12 13 L 28 27" : "M 12 27 L 28 27";
+function Hamburger({ isToggle }) {
+  let topLine = isToggle ? "M 12 27 L 28 13" : "M 12 13 L 28 13";
+  let midLine = isToggle ? 0 : 1;
+  let bottomLine = isToggle ? "M 12 13 L 28 27" : "M 12 27 L 28 27";
 
   return (
     <svg
