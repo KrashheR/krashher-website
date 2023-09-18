@@ -19,7 +19,6 @@ export const StyledToggler = styled.button`
   border-radius: 50%;
   border: 2px solid ${(props) => props.theme.colors.primary};
   background: none;
-  transition: 0.3s ease;
   cursor: pointer;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
