@@ -39,7 +39,7 @@ export const StyledLink = styled.a`
     width: 0%;
     height: 100%;
     margin: auto;
-    opacity:0;
+    opacity: 0;
     border-radius: 16px;
     z-index: -10;
     background-color: ${(props) => {
@@ -51,8 +51,9 @@ export const StyledLink = styled.a`
       }
       return color;
     }};
-    transition: width 0.6s ease,  opacity 0.4s ease-in-out;
-
+    transition:
+      width 0.6s ease,
+      opacity 0.4s ease-in-out;
   }
 
   &:hover {
@@ -60,7 +61,7 @@ export const StyledLink = styled.a`
 
     &:after {
       width: 100%;
-      opacity:1;
+      opacity: 1;
     }
   }
 

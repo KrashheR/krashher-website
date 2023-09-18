@@ -33,14 +33,6 @@ export const StyledPicture = styled.picture`
   }
 `;
 
-export const StyledCardLinksContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: auto;
-`;
-
 export const StyledStack = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
@@ -55,7 +47,6 @@ export const StyledStack = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
-
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     gap: 0;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
@@ -66,4 +57,12 @@ export const StyledStack = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     margin: 20px 0;
   }
+`;
+
+export const StyledCardLinksContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
 `;

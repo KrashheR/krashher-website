@@ -9,7 +9,7 @@ function Header() {
       <Container>
         <Navbar />
       </Container>
-  </StyledHeader>
+    </StyledHeader>
   );
 }
 
