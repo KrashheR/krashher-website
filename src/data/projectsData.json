@@ -1,6 +1,6 @@
 [
   {
-    "id":0,
+    "id": 0,
     "image": "/projects/price-predictor.webp",
     "imageMobile": "/projects/price-predictor-mobile.webp",
     "title": "AI stock price predictor - React",
@@ -10,7 +10,7 @@
     "demo": "https://krashher.github.io/stock-prices-predictor-site/"
   },
   {
-    "id":1,
+    "id": 1,
     "image": "/projects/crypto-wp.webp",
     "imageMobile": "/projects/crypto-wp-mobile.webp",
     "title": "Crypto - WordPress",
@@ -20,13 +20,13 @@
     "demo": "https://krashher-wp.space/"
   },
   {
-    "id":2,
-    "image": "/projects/oculus.webp",
-    "imageMobile": "/projects/oculus-mobile.webp",
-    "title": "Oculus - website",
+    "id": 2,
+    "image": "/projects/binoculus.webp",
+    "imageMobile": "/projects/binoculus-mobile.webp",
+    "title": "Binoculus - website",
     "description": "Проект разработан с использованием методологии БЭМ. В его основе: HTML5, SCSS(SASS) и чистый JavaScript. Сборка и оптимизация реализованы через GULP 4, включая минимизацию CSS и JS, а также конвертацию изображений в формат webp и их сжатие для улучшения производительности сайта.",
-    "stack": ["html", "sass", "js", "gulp", "bem"],
-    "github": "https://github.com/KrashheR/oculus-site",
-    "demo": "https://krashher.github.io/oculus-site/"
+    "stack": ["html", "sass", "js", "gulp", "bem", "photoshop"],
+    "github": "https://github.com/KrashheR/binoculus-site",
+    "demo": "https://krashher.github.io/binoculus-site/"
   }
 ]
