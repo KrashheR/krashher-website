@@ -19,7 +19,7 @@ export const StyledAboutMe = styled.section`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    gap: 10px;
+    gap: 20px;
   }
 `;
 
