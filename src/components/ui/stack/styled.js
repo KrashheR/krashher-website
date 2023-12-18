@@ -26,7 +26,7 @@ export const StyledStackImg = styled.img`
   }
 `;
 
-export const StyledStackSpan = styled.span`
+export const StyledStackItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
