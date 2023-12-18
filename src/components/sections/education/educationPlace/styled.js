@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledEducationPlace = styled.div`
+export const StyledEducationPlace = styled.li`
   display: flex;
   flex-direction: column;
   grid-area: ${(props) => props.$position};
@@ -11,4 +11,4 @@ export const StyledEducationPlace = styled.div`
     padding: 5px 0;
     border-width: 2px;
   }
-  `;
+`;

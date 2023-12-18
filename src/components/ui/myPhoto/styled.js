@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMyPhoto = styled.img`
+export const StyledMyPhotoImage = styled.img`
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -8,6 +8,10 @@ export const StyledMyPhoto = styled.img`
   top: 4px;
   width: calc(100% - 8px);
   height: calc(100% - 8px);
+`;
+
+export const StyledMyPhotoPicture = styled.picture`
+
 `;
 
 export const StyledMyPhotoContainer = styled.div`
@@ -41,8 +45,8 @@ export const StyledMyPhotoContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
   }
 `;
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, useAnimate } from "framer-motion";
-import { StyledBorder, StyledMyPhoto, StyledMyPhotoContainer } from "./styled";
+import { StyledBorder, StyledMyPhotoImage, StyledMyPhotoContainer, StyledMyPhotoPicture } from "./styled";
 
-function MyPhoto({ imageSrc }) {
+function MyPhoto({ imageSrc, imageSrcMobile }) {
   const [scope, animate] = useAnimate();
 
   const container = {
@@ -40,7 +40,11 @@ function MyPhoto({ imageSrc }) {
       animate="visible"
     >
       <StyledBorder as={motion.div} ref={scope}></StyledBorder>
-      <StyledMyPhoto src={imageSrc} alt="Моя фотография" loading="lazy" />
+      <StyledMyPhotoPicture>
+        <source srcSet={imageSrcMobile} media="(max-width: 575px)"></source>
+      <StyledMyPhotoImage src={imageSrc} alt="Моя фотография" loading="lazy" />
+      </StyledMyPhotoPicture>
+
     </StyledMyPhotoContainer>
   );
 }

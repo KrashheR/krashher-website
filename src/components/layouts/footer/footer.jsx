@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../../containers/container/container";
+import Container from "../container/container";
 import { StyledFooter } from "./styled";
 import Contacts from "../../sections/contacts/contacts";
 

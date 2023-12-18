@@ -1,8 +1,18 @@
 [
   {
     "id": 0,
-    "image": "/projects/price-predictor.webp",
-    "imageMobile": "/projects/price-predictor-mobile.webp",
+    "image": "https://www.krashher.ru/images/projects/real-estate.webp",
+    "imageMobile": "https://www.krashher.ru/images/projects/real-estate-mobile.webp",
+    "title": "Real-Estate - React",
+    "description": "Это React приложение - сайт строительной компании. Оно написано на языке TypeScript. Переход между страницами реализован с помощью react-router. В приложении реализован REST-API, данные приходят с сервера и хранятся в redux(redux-toolkit). Реализована сортировка, фильтрация данных, а также пагинация. Также реализовано взаимодействие со внешними API(YandexMaps).",
+    "stack": ["ts", "react", "redux", "router", "styledComponents", "webpack"],
+    "github": "https://github.com/KrashheR/real-estate-website",
+    "demo": "https://krashher.github.io/real-estate-website/#/"
+  },
+  {
+    "id": 1,
+    "image": "https://www.krashher.ru/images/projects/price-predictor.webp",
+    "imageMobile": "https://www.krashher.ru/images/projects/price-predictor-mobile.webp",
     "title": "AI stock price predictor - React",
     "description": "Данное веб-приложение было разработано на React. Его цель демонстрация результатов прогнозирования цен на активы моей модели машинного обучения. Интеграция с бэкендом выполнена через API на PHP. Приложение включает в себя интуитивный поиск с фильтрацией данных в таблице, их сортировку по столбцам, а также выделение ключевых показателей в отдельных карточках.",
     "stack": ["html", "js", "react", "styledComponents", "php"],
@@ -10,9 +20,9 @@
     "demo": "https://krashher.github.io/stock-prices-predictor-site/"
   },
   {
-    "id": 1,
-    "image": "/projects/crypto-wp.webp",
-    "imageMobile": "/projects/crypto-wp-mobile.webp",
+    "id": 2,
+    "image": "https://www.krashher.ru/images/projects/crypto-wp.webp",
+    "imageMobile": "https://www.krashher.ru/images/projects/crypto-wp-mobile.webp",
     "title": "Crypto - WordPress",
     "description": "Проект реализован на базе HTML и CSS по методологии БЭМ и интегрирован с WordPress через PHP. Дизайн сайта был предварительно разработан мной в Figma. Проект адаптирован под планшеты и мобильные устройства. Также была проведена работа над улучшением производительности сайта.",
     "stack": ["html", "css", "js", "php", "wordpress", "bem", "figma"],
@@ -20,9 +30,9 @@
     "demo": "https://krashher-wp.space/"
   },
   {
-    "id": 2,
-    "image": "/projects/binoculus.webp",
-    "imageMobile": "/projects/binoculus-mobile.webp",
+    "id": 3,
+    "image": "https://www.krashher.ru/images/projects/binoculus.webp",
+    "imageMobile": "https://www.krashher.ru/images/projects/binoculus-mobile.webp",
     "title": "Binoculus - website",
     "description": "Проект разработан с использованием методологии БЭМ. В его основе: HTML5, SCSS(SASS) и чистый JavaScript. Сборка и оптимизация реализованы через GULP 4, включая минимизацию CSS и JS, а также конвертацию изображений в формат webp и их сжатие для улучшения производительности сайта.",
     "stack": ["html", "sass", "js", "gulp", "bem", "photoshop"],

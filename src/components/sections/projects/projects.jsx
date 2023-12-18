@@ -1,8 +1,8 @@
 import React from "react";
-import { StyledProjects, StyledProjectsGrid } from "./styled";
+import { StyledProjects } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../../ui/title/title";
-import Data from "../../../data/projectsData.json";
-import Card from "../../ui/card/card";
+import projectsData from "../../../data/projectsData.json";
+import ProjectsList from "./projectsList/projectsList";
 
 function Projects() {
   return (
@@ -14,9 +14,7 @@ function Projects() {
       >
         МОИ ПРОЕКТЫ
       </Title>
-      <StyledProjectsGrid>
-        <Card data={Data} />
-      </StyledProjectsGrid>
+      <ProjectsList projectsData={projectsData}/>
     </StyledProjects>
   );
 }

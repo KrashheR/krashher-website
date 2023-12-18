@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-export const StyledCard = styled.div`
+export const StyledProjectsCard = styled.li`
   display: flex;
   flex-direction: column;
   max-width: 540px;
   box-shadow: 0px 0px 20px 10px #000;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s ease;
 
   &:hover {
+    transform: translateY(-2px);
     box-shadow: 0px 0px 30px 14px #000;
   }
 
@@ -17,13 +19,13 @@ export const StyledCard = styled.div`
   }
 `;
 
-export const StyledImage = styled.img`
+export const StyledProjectsCardImage = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
 `;
 
-export const StyledPicture = styled.picture`
+export const StyledProjectsCardPicture = styled.picture`
   display: flex;
   width: 100%;
   height: 340px;
@@ -33,7 +35,7 @@ export const StyledPicture = styled.picture`
   }
 `;
 
-export const StyledStack = styled.div`
+export const StyledProjectsCardStack = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   align-items: center;
