@@ -1,7 +1,23 @@
 import styled from "styled-components";
 
+export const StyledStackItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: ${(props) => props.theme.colors.textGray};
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    font-size: 16px;
+  }
+`;
+
 export const StyledStackImg = styled.img`
   height: 60px;
+  width: 60px;
   max-width: 60px;
   justify-self: center;
 
@@ -26,17 +42,3 @@ export const StyledStackImg = styled.img`
   }
 `;
 
-export const StyledStackItem = styled.li`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: ${(props) => props.theme.colors.textGray};
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-
-  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    font-size: 16px;
-  }
-`;
