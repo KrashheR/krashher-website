@@ -32,7 +32,7 @@ function HardSkills({ title, stackList }) {
         {title}
       </StyledHardSkillsSubtitle>
       <StyledHardSkillsStack
-        as={motion.div}
+        as={motion.ul}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
