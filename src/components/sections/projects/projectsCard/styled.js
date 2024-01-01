@@ -35,7 +35,7 @@ export const StyledProjectsCardPicture = styled.picture`
   }
 `;
 
-export const StyledProjectsCardStack = styled.div`
+export const StyledProjectsCardStack = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   align-items: center;

@@ -28,7 +28,7 @@ function ProjectsCard({ projectData }) {
 
   return (
     <StyledProjectsCard
-      as={motion.div}
+      as={motion.li}
       variants={showingAnimation}
       initial="hidden"
       whileInView="visible"
@@ -53,7 +53,7 @@ function ProjectsCard({ projectData }) {
       </Title>
       <Description>{projectData.description}</Description>
       <StyledProjectsCardStack
-        as={motion.div}
+        as={motion.ul}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
