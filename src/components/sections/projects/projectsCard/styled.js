@@ -10,7 +10,6 @@ export const StyledProjectsCard = styled.li`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-2px);
     box-shadow: 0px 0px 30px 14px #000;
   }
 
