@@ -36,11 +36,11 @@ function ProjectsCard({ projectData }) {
     >
       <StyledProjectsCardPicture>
         <source
-          srcSet={process.env.PUBLIC_URL + projectData.imageMobile}
+          srcSet={projectData.imageMobile}
           media="(max-width: 576px)"
         />
         <StyledProjectsCardImage
-          src={process.env.PUBLIC_URL + projectData.image}
+          src={projectData.image}
           alt={projectData.title + " скриншот"}
         />
       </StyledProjectsCardPicture>
