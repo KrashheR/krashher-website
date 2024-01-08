@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Real Estate Website</h1>
+<h1 align="center" id="title">Portfolio Website</h1>
 
 <p id="description">This project is my portfolio. The main idea was to create a web site that would contain basic information about me, my technology stack, education and projects.
     
