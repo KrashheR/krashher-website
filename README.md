@@ -34,8 +34,8 @@ Here're some of the project's best features:
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone https://github.com/KrashheR/real-estate-website.git
-$ cd real-estate-website
+$ git clone https://github.com/KrashheR/krashher-website.git
+$ cd krashher-website
 ```
 
 To install and set up the library, run:
