@@ -17,11 +17,11 @@ export const StyledRotatingCardContainer = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
-    height: 400px;
+    height: 450px;
   }
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobileSmall}) {
-    height: 400px;
+    height: 500px;
   }
 `;
 

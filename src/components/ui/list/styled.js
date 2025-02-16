@@ -5,6 +5,10 @@ export const StyledUnorderedList = styled.ul`
   flex-direction: column;
   gap: 8px;
   padding-left: 32px;
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
+    padding-left: 14px;
+  }
 `;
 
 export const StyledListItem = styled.li`

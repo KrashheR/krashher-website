@@ -10,26 +10,6 @@
     "demo": "https://krashher.github.io/real-estate-website/#/"
   },
   {
-    "id": 1,
-    "image": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/price-predictor.webp",
-    "imageMobile": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/price-predictor-mobile.webp",
-    "title": "AI stock price predictor - React",
-    "description": "Данное веб-приложение было разработано на React. Его цель демонстрация результатов прогнозирования цен на активы моей модели машинного обучения. Интеграция с бэкендом выполнена через API на PHP. Приложение включает в себя интуитивный поиск с фильтрацией данных в таблице, их сортировку по столбцам, а также выделение ключевых показателей в отдельных карточках.",
-    "stack": ["html", "js", "react", "styledComponents", "php"],
-    "github": "https://github.com/KrashheR/stock-prices-predictor-site",
-    "demo": "https://krashher.github.io/stock-prices-predictor-site/"
-  },
-  {
-    "id": 2,
-    "image": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/crypto-wp.webp",
-    "imageMobile": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/0d2d3929b3210e40232ef245433953dad689db6a/images/portfolio/crypto-wp-mobile.webp",
-    "title": "Crypto - WordPress",
-    "description": "Проект реализован на базе HTML и CSS по методологии БЭМ и интегрирован с WordPress через PHP. Дизайн сайта был предварительно разработан мной в Figma. Проект адаптирован под планшеты и мобильные устройства. Также была проведена работа над улучшением производительности сайта.",
-    "stack": ["html", "css", "js", "php", "wordpress", "bem", "figma"],
-    "github": "https://github.com/KrashheR/crypto-news-wp",
-    "demo": "https://krashher-wp.space/"
-  },
-  {
     "id": 3,
     "image": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/binoculus.webp",
     "imageMobile": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/binoculus-mobile.webp",
