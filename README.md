@@ -5,10 +5,10 @@
   One of the main features are beautiful, smooth animations of appearances, transitions, scrolling across the page. They are realized with the help of Framer-motion.
 </p>
 
-<img src="https://www.krashher.ru/images/github/krashher/krashherPreview.png" alt="krashher preview">
+<img src="https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/portfolio.png" alt="krashher preview">
 <h2>🚀 Demo</h2>
 
-[www.krashher.ru](https://www.krashher.ru) 
+[https://krashher.github.io/krashher-website](https://krashher.github.io/krashher-website) 
 
 <h2>💻 Built with</h2>
 
