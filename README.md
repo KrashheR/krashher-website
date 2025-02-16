@@ -1,4 +1,4 @@
-<h1 align="center" id="title">Real Estate Website</h1>
+<h1 align="center" id="title">Portfolio Website</h1>
 
 <p id="description">This project is my portfolio. The main idea was to create a web site that would contain basic information about me, my technology stack, education and projects.
     
@@ -34,8 +34,8 @@ Here're some of the project's best features:
 Start with cloning this repo on your local machine:
 
 ```sh
-$ git clone https://github.com/KrashheR/real-estate-website.git
-$ cd real-estate-website
+$ git clone https://github.com/KrashheR/krashher-website.git
+$ cd krashher-website
 ```
 
 To install and set up the library, run:
