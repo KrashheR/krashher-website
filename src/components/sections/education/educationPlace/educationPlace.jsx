@@ -6,29 +6,14 @@ import Title, {
 } from "../../../ui/title/title";
 import { motion } from "framer-motion";
 import Description from "../../../ui/description/description";
+import { fadeInAnimation } from "../../../../assets/animations/fadeInAnimation";
 
 function EducationPlace({ title, description, gridPosition, custom }) {
-  const showingAnimation = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      opacity: 1,
-      transition: {
-        delay: custom * 0.5,
-        duration: 3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.4,
-      },
-    }),
-  };
-
   return (
     <StyledEducationPlace
       as={motion.li}
       $position={gridPosition}
-      variants={showingAnimation}
+      variants={fadeInAnimation}
       custom={custom}
     >
       <Title

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSoftSkills = styled.div`
-
-`;
+export const StyledSoftSkills = styled.div``;
 
 export const StyledSoftSkill = styled.span`
   display: flex;
@@ -20,7 +18,6 @@ export const StyledSoftSkill = styled.span`
     padding: 14px;
     width: -webkit-fill-available;
   }
-
 `;
 
 export const StyledSoftSkillsContainer = styled.div`
@@ -63,7 +60,7 @@ export const StyledSoftSkillsStack = styled.div`
 `;
 
 export const StyledSoftSkillsSubtitle = styled.h3`
-  margin: 50px 0;
+  margin-bottom: 50px;
   border-bottom: 2px solid ${(props) => props.theme.colors.textPrimary};
   text-align: left;
   font-size: 26px;

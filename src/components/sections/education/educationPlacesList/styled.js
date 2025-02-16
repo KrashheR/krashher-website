@@ -7,7 +7,6 @@ export const StyledEducationPlacesList = styled.ul`
     "andOther . learnjs"
     "universityMag . react";
   grid-gap: 40px;
-  margin-top: 50px;
   list-style: none;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
@@ -19,5 +18,3 @@ export const StyledEducationPlacesList = styled.ul`
     grid-gap: 30px;
   }
 `;
-
-

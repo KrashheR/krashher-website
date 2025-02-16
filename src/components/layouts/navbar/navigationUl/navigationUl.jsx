@@ -14,6 +14,11 @@ function NavigationUl({ isToggle, setToggle }) {
         </StyledLink>
       </StyledLi>
       <StyledLi>
+        <StyledLink href="#experience" onClick={handleToggleChange}>
+          Опыт работы
+        </StyledLink>
+      </StyledLi>
+      <StyledLi>
         <StyledLink href="#skills" onClick={handleToggleChange}>
           Навыки
         </StyledLink>

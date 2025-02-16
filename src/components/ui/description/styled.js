@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { DescriptionType } from "./description";
 
 export const StyledDescription = styled.p`
   color: ${(props) => props.theme.colors.textGray};
   font-size: 20px;
-  padding: 0 20px;
+  padding: 0;
   font-weight: 300;
   text-align: center;
 

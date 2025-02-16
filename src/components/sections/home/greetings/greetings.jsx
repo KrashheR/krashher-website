@@ -1,40 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { StyledGreetings } from "./styled";
+import { showingText } from "../../../../assets/animations/showingTextAnimation";
+import { blackBox } from "../../../../assets/animations/blackBoxAnimation";
+import useIsDesktop from "../../../hooks/useIsDesktop";
 
-function Greetings() {
-  const blackBox = {
-    initial: {
-      opacity: 1,
-      y: 0,
-    },
-    animate: {
-      height: 0,
-      opacity: 0,
-      y: "-50%",
-      transition: {
-        when: "afterChildren",
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const showingText = {
-    initial: {
-      opacity: 0,
-      y: 30,
-    },
-    animate: (custom) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: custom * 0.9,
-        duration: 1,
-        ease: "easeInOut",
-      },
-    }),
-  };
+function Greetings({ textData }) {
+  const isDesktop = useIsDesktop(970);
+  const lettersArr = isDesktop
+    ? textData?.split("")
+    : textData?.match(/[^,]+,?/g);
 
   return (
     <StyledGreetings
@@ -44,15 +19,13 @@ function Greetings() {
       animate="animate"
       viewport={{ once: true }}
     >
-      <motion.h1 variants={showingText} custom={0}>
-        Привет,
-      </motion.h1>
-      <motion.h1 variants={showingText} custom={1}>
-        я Никита,
-      </motion.h1>
-      <motion.h1 variants={showingText} custom={2}>
-        Веб-разработчик
-      </motion.h1>
+      {lettersArr.map((item, index) => {
+        return (
+          <motion.h1 variants={showingText} custom={index}>
+            {item}
+          </motion.h1>
+        );
+      })}
     </StyledGreetings>
   );
 }

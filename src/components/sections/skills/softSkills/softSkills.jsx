@@ -1,5 +1,10 @@
 import React from "react";
-import { StyledSoftSkill, StyledSoftSkills, StyledSoftSkillsSubtitle, StyledSoftSkillsContainer } from "./styled";
+import {
+  StyledSoftSkill,
+  StyledSoftSkills,
+  StyledSoftSkillsSubtitle,
+  StyledSoftSkillsContainer,
+} from "./styled";
 import Title, {
   TitleColor,
   TitleLevel,
@@ -7,47 +12,15 @@ import Title, {
 } from "../../../ui/title/title";
 import Description from "../../../ui/description/description";
 import { motion } from "framer-motion";
+import { slideFromLeftAnimation } from "../../../../assets/animations/slideFromLeftAnimation";
+import { fadeInWithBounceAnimation } from "../../../../assets/animations/fadeInWithBounceAnimation";
 
 function SoftSkills({ title, softSkillsList }) {
-  const stackAnimation = {
-    hidden: {
-      y: 100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: {
-        delay: custom * 0.3,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.3,
-      },
-    }),
-  };
-
-  const titleAnimation = {
-    hidden: {
-      x: "-30%",
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: custom * 0.2,
-        ease: "easeInOut",
-        damping: 0.5,
-      },
-    }),
-  };
-
   return (
     <StyledSoftSkills>
       <StyledSoftSkillsSubtitle
         as={motion.h3}
-        variants={titleAnimation}
+        variants={slideFromLeftAnimation}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -64,7 +37,7 @@ function SoftSkills({ title, softSkillsList }) {
         {softSkillsList.map((item, index) => (
           <StyledSoftSkill
             as={motion.span}
-            variants={stackAnimation}
+            variants={fadeInWithBounceAnimation}
             key={index + item.title}
             custom={index + 1}
           >

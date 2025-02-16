@@ -23,11 +23,23 @@ export const StyledTitle = styled.h1`
       : props.theme.fontSizes.cardTitle;
   }};
   font-weight: ${(props) => {
-    return props.$titleType === TitleType.SECTION ? 700 : 400;
+    if (
+      props.$titleType === TitleType.SECTION ||
+      props.$titleType === TitleType.EXPERIENCE
+    ) {
+      return 700;
+    }
+    return 400;
   }};
   text-align: ${(props) => {
-    return props.$titleType === TitleType.SECTION ? "left" : "center";
+    if (props.$titleType === TitleType.SECTION) {
+      return "left";
+    }
+    return "center";
   }};
+
+  margin-bottom: ${(props) =>
+    props.$titleType === TitleType.SECTION ? "50px" : "0"};
 
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     font-size: ${(props) => {
@@ -36,6 +48,9 @@ export const StyledTitle = styled.h1`
       }
     }};
   }
+
+  border-bottom: ${(props) => (props.$withUnderline ? "2px solid " : "0")};
+  border-color: ${(props) => props.theme.colors.primary};
 
   @media (max-width: ${(props) => props.theme.deviceSizes.mobile}) {
     font-size: ${(props) => {

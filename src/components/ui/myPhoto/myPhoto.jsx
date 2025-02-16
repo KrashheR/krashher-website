@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { motion, useAnimate } from "framer-motion";
-import { StyledBorder, StyledMyPhotoImage, StyledMyPhotoContainer, StyledMyPhotoPicture } from "./styled";
+import {
+  StyledBorder,
+  StyledMyPhotoImage,
+  StyledMyPhotoContainer,
+  StyledMyPhotoPicture,
+} from "./styled";
 
 function MyPhoto({ imageSrc, imageSrcMobile }) {
   const [scope, animate] = useAnimate();
@@ -24,7 +29,7 @@ function MyPhoto({ imageSrc, imageSrcMobile }) {
         opacity: [1, 0.5, 1],
         ease: "linear",
         duration: 8,
-      }
+      },
     );
   }
 
@@ -41,10 +46,14 @@ function MyPhoto({ imageSrc, imageSrcMobile }) {
     >
       <StyledBorder as={motion.div} ref={scope}></StyledBorder>
       <StyledMyPhotoPicture>
-        <source srcSet={imageSrcMobile} media="(max-width: 575px)"></source>
-      <StyledMyPhotoImage src={imageSrc} alt="Моя фотография" loading="lazy" />
+        <source srcSet={imageSrcMobile} media="(max-width: 575px)" />
+        <StyledMyPhotoImage
+          src={imageSrc}
+          alt="Моя фотография"
+          loading="lazy"
+          decoding="async"
+        />
       </StyledMyPhotoPicture>
-
     </StyledMyPhotoContainer>
   );
 }

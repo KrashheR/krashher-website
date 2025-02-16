@@ -1,0 +1,53 @@
+[
+  {
+    "id": "experience_data_0",
+    "title": "Evercode lab",
+    "time": "С 09.2023 по настоящее время",
+    "position": "Web3 Frontend Разработчик",
+    "description": "Проектная разработка сайта (JS, React, Redux, SSR, NodeJs, Pug, Koa, Webpack)",
+    "duties": {
+      "title": "Обязанности",
+      "data": [
+        {
+          "id": "duties_list_0",
+          "text": "Разработка новых и обновление легаси компонентов и страниц сайта."
+        },
+        {
+          "id": "duties_list_1",
+          "text": "Анализ производительности сайта, поиск мест, влияющих на метрики PageSpeed, разработка плана поэтапного улучшения производительности и его реализация."
+        },
+        {
+          "id": "duties_list_2",
+          "text": "Интеграция Web3 технологий (WalletConnect, TonConnect)."
+        },
+        { "id": "duties_list_3", "text": "SEO оптимизация сайта." },
+        { "id": "duties_list_4", "text": "Проведение Code Review." }
+      ]
+    },
+    "achievements": {
+      "title": "Достижения",
+      "data": [
+        {
+          "id": "achievements_list_0",
+          "text": "Улучшил UI и UX сайта через обновление верстки, добавление новых компонентов и оптимизацию более 40 страниц."
+        },
+        {
+          "id": "achievements_list_1",
+          "text": "Улучшил производительность сайта по таким метрикам PageSpeed, как INP, LCP, CLS, TBT."
+        },
+        {
+          "id": "achievements_list_2",
+          "text": "Реализовал создание, подпись и отправку транзакций с использованием WalletConnect и авторизацию через TonConnect."
+        },
+        {
+          "id": "achievements_list_3",
+          "text": "Повысил SEO сайта благодаря корректным мета тегам, микроразметке, сайтмапам, семантике страниц"
+        },
+        {
+          "id": "achievements_list_4",
+          "text": "Провел более 100 ревью кода для джунов, стажеров и мидлов"
+        }
+      ]
+    }
+  }
+]

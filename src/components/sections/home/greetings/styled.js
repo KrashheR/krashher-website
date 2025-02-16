@@ -9,7 +9,7 @@ export const StyledGreetings = styled.h1`
   color: ${(props) => props.theme.colors.textPrimary};
   font-size: 40px;
   font-weight: 700;
-  gap: 10px;
+  gap: 8px;
   will-change: transform;
 
   @media (max-width: ${(props) => props.theme.deviceSizes.laptop}) {
@@ -19,5 +19,10 @@ export const StyledGreetings = styled.h1`
   @media (max-width: ${(props) => props.theme.deviceSizes.tablet}) {
     font-size: 6vw;
     flex-direction: column;
+    gap: 8px;
+  }
+
+  @media (max-width: ${(props) => props.theme.deviceSizes.bigScreen}) {
+    gap: 4px;
   }
 `;

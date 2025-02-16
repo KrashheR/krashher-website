@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHardSkills = styled.div`
-
+  margin-bottom: 50px;
 `;
 
 export const StyledHardSkillsStack = styled.ul`
@@ -22,7 +22,7 @@ export const StyledHardSkillsStack = styled.ul`
 `;
 
 export const StyledHardSkillsSubtitle = styled.h3`
-  margin: 50px 0;
+  margin-bottom: 50px;
   border-bottom: 2px solid ${(props) => props.theme.colors.textPrimary};
   text-align: left;
   font-size: 26px;

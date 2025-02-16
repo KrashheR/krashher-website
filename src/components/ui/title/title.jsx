@@ -19,11 +19,18 @@ export const TitleType = {
   SECTION: "section",
   CARD: "card",
   SOFTSKILLS: "softSkills",
+  EXPERIENCE: "experience",
+  UNDERLINE: "underline",
 };
 
-function Title({ level, color, type, children }) {
+function Title({ level, color, type, withUnderline, children }) {
   return (
-    <StyledTitle as={`h${level}`} $color={color} $titleType={type}>
+    <StyledTitle
+      as={`h${level}`}
+      $color={color}
+      $titleType={type}
+      $withUnderline={withUnderline}
+    >
       {children}
     </StyledTitle>
   );

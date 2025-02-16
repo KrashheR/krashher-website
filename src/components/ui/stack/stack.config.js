@@ -1,22 +1,28 @@
-import jsIcon from "../../../assets/images/stackIcons/js.svg";
-import htmlIcon from "../../../assets/images/stackIcons/html.svg";
-import scssIcon from "../../../assets/images/stackIcons/scss.svg";
-import sassIcon from "../../../assets/images/stackIcons/sass.svg";
-import gulpIcon from "../../../assets/images/stackIcons/gulp.svg";
-import bemIcon from "../../../assets/images/stackIcons/bem.svg";
-import cssIcon from "../../../assets/images/stackIcons/css.svg";
-import gitIcon from "../../../assets/images/stackIcons/git.svg";
-import reactIcon from "../../../assets/images/stackIcons/react.svg";
-import reduxIcon from "../../../assets/images/stackIcons/redux.svg";
-import tsIcon from "../../../assets/images/stackIcons/ts.svg";
-import vscodeIcon from "../../../assets/images/stackIcons/vscode.svg";
-import webpackIcon from "../../../assets/images/stackIcons/webpack.svg";
-import figmaIcon from "../../../assets/images/stackIcons/figma.svg";
-import wordpressIcon from "../../../assets/images/stackIcons/wordpress.svg";
-import styledComponentsIcon from "../../../assets/images/stackIcons/styled-components.svg";
-import phpIcon from "../../../assets/images/stackIcons/php.svg";
-import photoshopIcon from "../../../assets/images/stackIcons/photoshop.svg";
-import routerIcon from "../../../assets/images/stackIcons/router.svg";
+import jsIcon from "../../../assets/images/icons/stack/js.svg";
+import htmlIcon from "../../../assets/images/icons/stack/html.svg";
+import scssIcon from "../../../assets/images/icons/stack/scss.svg";
+import sassIcon from "../../../assets/images/icons/stack/sass.svg";
+import gulpIcon from "../../../assets/images/icons/stack/gulp.svg";
+import bemIcon from "../../../assets/images/icons/stack/bem.svg";
+import cssIcon from "../../../assets/images/icons/stack/css.svg";
+import gitIcon from "../../../assets/images/icons/stack/git.svg";
+import reactIcon from "../../../assets/images/icons/stack/react.svg";
+import reduxIcon from "../../../assets/images/icons/stack/redux.svg";
+import tsIcon from "../../../assets/images/icons/stack/ts.svg";
+import vscodeIcon from "../../../assets/images/icons/stack/vscode.svg";
+import webpackIcon from "../../../assets/images/icons/stack/webpack.svg";
+import figmaIcon from "../../../assets/images/icons/stack/figma.svg";
+import wordpressIcon from "../../../assets/images/icons/stack/wordpress.svg";
+import styledComponentsIcon from "../../../assets/images/icons/stack/styled-components.svg";
+import phpIcon from "../../../assets/images/icons/stack/php.svg";
+import photoshopIcon from "../../../assets/images/icons/stack/photoshop.svg";
+import routerIcon from "../../../assets/images/icons/stack/router.svg";
+import nodeJsIcon from "../../../assets/images/icons/stack/nodejs.svg";
+import pugIcon from "../../../assets/images/icons/stack/pug.svg";
+import gitlabIcon from "../../../assets/images/icons/stack/gitlab.svg";
+import jenkinsIcon from "../../../assets/images/icons/stack/jenkins.svg";
+import jiraIcon from "../../../assets/images/icons/stack/jira.svg";
+import postmanIcon from "../../../assets/images/icons/stack/postman.svg";
 
 export const stackData = {
   html: { icon: htmlIcon, title: "HTML" },
@@ -38,4 +44,10 @@ export const stackData = {
   php: { icon: phpIcon, title: "PHP" },
   photoshop: { icon: photoshopIcon, title: "Photoshop" },
   router: { icon: routerIcon, title: "React Router" },
+  nodejs: { icon: nodeJsIcon, title: "Node Js" },
+  pug: { icon: pugIcon, title: "Pug" },
+  gitlab: { icon: gitlabIcon, title: "GitLab" },
+  jenkins: { icon: jenkinsIcon, title: "Jenkins" },
+  jira: { icon: jiraIcon, title: "Jira" },
+  postman: { icon: postmanIcon, title: "Postman" },
 };

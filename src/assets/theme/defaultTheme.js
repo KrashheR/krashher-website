@@ -13,6 +13,7 @@ export const DefaultTheme = {
     mobile: "576px",
     tablet: "904px",
     laptop: "1240px",
+    bigScreen: "1440px",
   },
   fontSizes: {
     cardTitle: "24px",

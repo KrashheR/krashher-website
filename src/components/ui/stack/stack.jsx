@@ -2,22 +2,9 @@ import React from "react";
 import { StyledStackImg, StyledStackItem } from "./styled";
 import { motion } from "framer-motion";
 import { stackData } from "./stack.config";
+import { popUpFromDownAnimation } from "../../../assets/animations/popUpFromDownAnimation";
 
 function Stack({ stackList, isTitleVisible }) {
-  const stackAnimation = {
-    hidden: {
-      y: 30,
-      opacity: 0,
-      scale: 1.5,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      scale: 1,
-      transition: { delay: custom * 0.2, duration: 0.45 },
-    }),
-  };
-
   return (
     <>
       {stackList.map((item, index) => {
@@ -25,7 +12,7 @@ function Stack({ stackList, isTitleVisible }) {
           <StyledStackItem
             as={motion.li}
             custom={index + 1}
-            variants={stackAnimation}
+            variants={popUpFromDownAnimation}
             key={index + stackData[item].title}
           >
             <StyledStackImg

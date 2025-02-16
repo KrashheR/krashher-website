@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledProjectsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  margin-top: 50px;
   grid-gap: 80px;
   list-style: none;
 

@@ -12,9 +12,9 @@ function Projects() {
         color={TitleColor.PRIMARY}
         type={TitleType.SECTION}
       >
-        МОИ ПРОЕКТЫ
+        МОИ ПЕТ-ПРОЕКТЫ
       </Title>
-      <ProjectsList projectsData={projectsData}/>
+      <ProjectsList projectsData={projectsData} />
     </StyledProjects>
   );
 }
