@@ -32,7 +32,7 @@
   {
     "id": 3,
     "image": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/binoculus.webp",
-    "imageMobile": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/binoculus-mobile.webpp",
+    "imageMobile": "https://raw.githubusercontent.com/KrashheR/cdn.krashher/refs/heads/main/images/portfolio/binoculus-mobile.webp",
     "title": "Binoculus - website",
     "description": "Проект разработан с использованием методологии БЭМ. В его основе: HTML5, SCSS(SASS) и чистый JavaScript. Сборка и оптимизация реализованы через GULP 4, включая минимизацию CSS и JS, а также конвертацию изображений в формат webp и их сжатие для улучшения производительности сайта.",
     "stack": ["html", "sass", "js", "gulp", "bem", "photoshop"],
