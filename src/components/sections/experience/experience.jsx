@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledExperience, StyledExperienceList } from "./styled";
 import Title, { TitleColor, TitleLevel, TitleType } from "../../ui/title/title";
-import myExperienceList from "../../../data/experienceData.json";
+import myExperienceList from "../../../data/workExperienceData.json";
 import ExperienceItem from "./experienceItem/experienceItem";
 
 function Experience() {
